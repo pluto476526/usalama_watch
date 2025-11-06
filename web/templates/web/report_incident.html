@@ -1,0 +1,549 @@
+{% extends 'web/main.html' %}
+{% load static %}
+
+
+{% block main %}
+
+
+<!-- Start top-section Area -->
+<section class="banner-area relative" style="background-image: linear-gradient(rgba(0, 0, 30, 0.55), rgba(0, 0, 60, 0.55)), url({% static 'img/report_incident.jpg' %});
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;">
+    <div class="overlay overlay-bg"></div>
+    <div class="container">
+        <div class="row justify-content-between align-items-center text-center banner-content">
+            <div class="col-lg-12">
+                <h1>Report Incident</h1>
+                <p>Help keep your community safe by reporting safety concerns and incidents</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End top-section Area -->
+
+
+<!-- Start Report Form Area -->
+<section class="about-area section-gap">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title text-center">
+                    <h4>Community Safety</h4>
+                    <h2>Report a Safety Incident</h2>
+                    <p>Your report helps create a safer community for everyone. All reports can be made anonymously.</p>
+                    <div class="emergency-alert">
+                    <p><i class="fa fa-exclamation-triangle"></i> <strong>Emergency?</strong> Call: 999, 112, 911 immediately for life-threatening situations</p>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <form id="incident-report-form" class="report-form">
+                    <!-- Progress Steps -->
+                    <div class="form-progress mb-5">
+                        <div class="progress-steps">
+                            <div class="step active" data-step="1">
+                                <div class="step-number">1</div>
+                                <div class="step-label">Incident Type</div>
+                            </div>
+                            <div class="step" data-step="2">
+                                <div class="step-number">2</div>
+                                <div class="step-label">Location & Time</div>
+                            </div>
+                            <div class="step" data-step="3">
+                                <div class="step-number">3</div>
+                                <div class="step-label">Details</div>
+                            </div>
+                            <div class="step" data-step="4">
+                                <div class="step-number">4</div>
+                                <div class="step-label">Review & Submit</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 1: Incident Type -->
+                    <div class="form-step active" id="step-1">
+                        <div class="step-header">
+                            <h4>Step 1: What type of incident are you reporting?</h4>
+                            <p>Select the category that best describes the situation</p>
+                        </div>
+
+                        <div class="incident-types-grid">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="incident-type-option">
+                                        <input type="radio" name="incident_type" id="type-crime" value="crime" class="incident-type-input">
+                                        <label for="type-crime" class="incident-type-label">
+                                            <div class="type-icon">
+                                                <i class="fa fa-exclamation-triangle"></i>
+                                            </div>
+                                            <h5>Criminal Activity</h5>
+                                            <p>Theft, assault, burglary, vandalism, or suspicious activities</p>
+                                            <div class="type-examples">
+                                                <span class="example-tag">Robbery</span>
+                                                <span class="example-tag">Assault</span>
+                                                <span class="example-tag">Burglary</span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="incident-type-option">
+                                        <input type="radio" name="incident_type" id="type-accident" value="accident" class="incident-type-input">
+                                        <label for="type-accident" class="incident-type-label">
+                                            <div class="type-icon">
+                                                <i class="fa fa-car"></i>
+                                            </div>
+                                            <h5>Road Accident</h5>
+                                            <p>Vehicle collisions, hazardous road conditions, or traffic incidents</p>
+                                            <div class="type-examples">
+                                                <span class="example-tag">Car Crash</span>
+                                                <span class="example-tag">Hit & Run</span>
+                                                <span class="example-tag">Road Hazard</span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="incident-type-option">
+                                        <input type="radio" name="incident_type" id="type-hazard" value="hazard" class="incident-type-input">
+                                        <label for="type-hazard" class="incident-type-label">
+                                            <div class="type-icon">
+                                                <i class="fa fa-warning"></i>
+                                            </div>
+                                            <h5>Public Hazard</h5>
+                                            <p>Unsafe structures, fallen trees, flooding, or environmental dangers</p>
+                                            <div class="type-examples">
+                                                <span class="example-tag">Fallen Tree</span>
+                                                <span class="example-tag">Flooding</span>
+                                                <span class="example-tag">Unsafe Building</span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="incident-type-option">
+                                        <input type="radio" name="incident_type" id="type-checkpoint" value="checkpoint" class="incident-type-input">
+                                        <label for="type-checkpoint" class="incident-type-label">
+                                            <div class="type-icon">
+                                                <i class="fa fa-shield"></i>
+                                            </div>
+                                            <h5>Police Checkpoint</h5>
+                                            <p>Report police presence, both routine checkpoints and incidents</p>
+                                            <div class="type-examples">
+                                                <span class="example-tag">Roadblock</span>
+                                                <span class="example-tag">Security Check</span>
+                                                <span class="example-tag">Police Activity</span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="incident-type-option">
+                                        <input type="radio" name="incident_type" id="type-fire" value="fire" class="incident-type-input">
+                                        <label for="type-fire" class="incident-type-label">
+                                            <div class="type-icon">
+                                                <i class="fa fa-fire"></i>
+                                            </div>
+                                            <h5>Fire Emergency</h5>
+                                            <p>Structure fires, bush fires, or any fire-related emergencies</p>
+                                            <div class="type-examples">
+                                                <span class="example-tag">Building Fire</span>
+                                                <span class="example-tag">Bush Fire</span>
+                                                <span class="example-tag">Vehicle Fire</span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="incident-type-option">
+                                        <input type="radio" name="incident_type" id="type-other" value="other" class="incident-type-input">
+                                        <label for="type-other" class="incident-type-label">
+                                            <div class="type-icon">
+                                                <i class="fa fa-question-circle"></i>
+                                            </div>
+                                            <h5>Other Incident</h5>
+                                            <p>Any other safety concern not covered by the categories above</p>
+                                            <div class="type-examples">
+                                                <span class="example-tag">Missing Person</span>
+                                                <span class="example-tag">Public Disturbance</span>
+                                                <span class="example-tag">Other</span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-navigation">
+                            <button type="button" class="primary-btn next-step" data-next="2">Next: Location & Time</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Location & Time -->
+                    <div class="form-step" id="step-2">
+                        <div class="step-header">
+                            <h4>Step 2: Where and when did this happen?</h4>
+                            <p>Provide location and timing details for the incident</p>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label for="incident_date">Date of Incident</label>
+                                    <input type="date" class="form-control" id="incident_date" name="incident_date" required>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label for="incident_time">Time of Incident</label>
+                                    <input type="time" class="form-control" id="incident_time" name="incident_time" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="county">County</label>
+                            <select class="form-control nice-select" id="county" name="county" required>
+                                <option value="">Select County</option>
+                                <option value="nairobi">Nairobi</option>
+                                <option value="mombasa">Mombasa</option>
+                                <option value="kisumu">Kisumu</option>
+                                <option value="nakuru">Nakuru</option>
+                                <option value="kiambu">Kiambu</option>
+                                <option value="meru">Meru</option>
+                                <option value="kilifi">Kilifi</option>
+                                <option value="uasin_gishu">Uasin Gishu</option>
+                                <option value="kakamega">Kakamega</option>
+                                <option value="bungoma">Bungoma</option>
+                                <!-- Add more counties as needed -->
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="location_description">Location Description</label>
+                            <textarea class="form-control" id="location_description" name="location_description" rows="3" placeholder="Describe the exact location (e.g., 'Near Nairobi CBD, Tom Mboya Street, outside Barclays Bank')" required></textarea>
+                            <small class="form-text text-muted">Be as specific as possible to help others locate the area</small>
+                        </div>
+
+                        <div class="location-options">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="location-option">
+                                        <button type="button" class="secondary-btn location-btn" id="use-current-location">
+                                            <i class="fa fa-location-arrow"></i> Use My Current Location
+                                        </button>
+                                        <small class="form-text text-muted">We'll use your device's GPS to get accurate coordinates</small>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="location-option">
+                                        <button type="button" class="secondary-btn location-btn" id="select-from-map">
+                                            <i class="fa fa-map-marker"></i> Select from Map
+                                        </button>
+                                        <small class="form-text text-muted">Choose location from interactive map</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-navigation">
+                            <button type="button" class="secondary-btn prev-step" data-prev="1">Back</button>
+                            <button type="button" class="primary-btn next-step" data-next="3">Next: Incident Details</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Incident Details -->
+                    <div class="form-step" id="step-3">
+                        <div class="step-header">
+                            <h4>Step 3: Tell us what happened</h4>
+                            <p>Provide detailed information about the incident</p>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="severity_level">Severity Level</label>
+                            <select class="form-control nice-select" id="severity_level" name="severity_level" required>
+                                <option value="">Select Severity</option>
+                                <option value="low">Low - Minor incident, no immediate danger</option>
+                                <option value="medium">Medium - Concerning situation, exercise caution</option>
+                                <option value="high">High - Serious incident, avoid area if possible</option>
+                                <option value="critical">Critical - Emergency situation, immediate danger</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="incident_description">Incident Description</label>
+                            <textarea class="form-control" id="incident_description" name="incident_description" rows="5" placeholder="Please provide a detailed description of what you witnessed or experienced. Include information about people involved, vehicles, weapons, or any other relevant details." required></textarea>
+                            <small class="form-text text-muted">Be factual and detailed. Avoid speculation or assumptions.</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="people_involved">People Involved (Optional)</label>
+                            <textarea class="form-control" id="people_involved" name="people_involved" rows="3" placeholder="Describe any people involved (approximate age, gender, clothing, distinctive features)"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="vehicles_involved">Vehicles Involved (Optional)</label>
+                            <textarea class="form-control" id="vehicles_involved" name="vehicles_involved" rows="2" placeholder="Describe any vehicles involved (color, make, model, license plate)"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Upload Photos or Videos (Optional)</label>
+                            <div class="file-upload-area">
+                                <div class="file-upload-box">
+                                    <i class="fa fa-cloud-upload"></i>
+                                    <p>Drag & drop files here or click to browse</p>
+                                    <small>Maximum file size: 10MB. Supported formats: JPG, PNG, MP4</small>
+                                    <input type="file" id="media_files" name="media_files" multiple accept="image/*,video/*" class="file-input">
+                                </div>
+                                <div class="file-preview" id="file-preview"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-navigation">
+                            <button type="button" class="secondary-btn prev-step" data-prev="2">Back</button>
+                            <button type="button" class="primary-btn next-step" data-next="4">Next: Review & Submit</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 4: Review & Submit -->
+                    <div class="form-step" id="step-4">
+                        <div class="step-header">
+                            <h4>Step 4: Review and submit your report</h4>
+                            <p>Please review all information before submitting</p>
+                        </div>
+
+                        <div class="review-section">
+                            <div class="review-item">
+                                <h5>Incident Type</h5>
+                                <p id="review-type">Not selected</p>
+                            </div>
+                            <div class="review-item">
+                                <h5>Date & Time</h5>
+                                <p id="review-datetime">Not provided</p>
+                            </div>
+                            <div class="review-item">
+                                <h5>Location</h5>
+                                <p id="review-location">Not provided</p>
+                            </div>
+                            <div class="review-item">
+                                <h5>Severity Level</h5>
+                                <p id="review-severity">Not selected</p>
+                            </div>
+                            <div class="review-item">
+                                <h5>Description</h5>
+                                <p id="review-description">Not provided</p>
+                            </div>
+                        </div>
+
+                        <div class="privacy-section">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="anonymous_report" name="anonymous_report" checked>
+                                <label class="form-check-label" for="anonymous_report">
+                                    <strong>Report Anonymously</strong>
+                                    <p>Your personal information will not be stored or shared. The report will appear on the map without identifying you.</p>
+                                </label>
+                            </div>
+
+                            <div class="contact-details" id="contact-details" style="display: none;">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label for="contact_name">Your Name (Optional)</label>
+                                            <input type="text" class="form-control" id="contact_name" name="contact_name">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label for="contact_phone">Phone Number (Optional)</label>
+                                            <input type="tel" class="form-control" id="contact_phone" name="contact_phone">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="contact_email">Email Address (Optional)</label>
+                                    <input type="email" class="form-control" id="contact_email" name="contact_email">
+                                    <small class="form-text text-muted">We may contact you if we need more information about the incident</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="terms-section">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="agree_terms" name="agree_terms" required>
+                                <label class="form-check-label" for="agree_terms">
+                                    I confirm that the information provided is accurate to the best of my knowledge and I understand that false reporting may have legal consequences.
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-navigation">
+                            <button type="button" class="secondary-btn prev-step" data-prev="3">Back</button>
+                            <button type="submit" class="primary-btn" id="submit-report">Submit Report</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Report Form Area -->
+
+<!-- Start Alternative Reporting Area -->
+<section class="features-area section-gap-top bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title text-center">
+                    <h4>Other Ways to Report</h4>
+                    <h2>Alternative Reporting Methods</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="reporting-method">
+                    <div class="method-icon">
+                        <i class="fa fa-mobile"></i>
+                    </div>
+                    <h4>Mobile App</h4>
+                    <p>Download our mobile app for quick reporting with location services and photo uploads</p>
+                    <a href="#" class="method-link">Download App</a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="reporting-method">
+                    <div class="method-icon">
+                        <i class="fa fa-phone"></i>
+                    </div>
+                    <h4>USSD Service</h4>
+                    <p>Report incidents from any mobile phone using our USSD code. No internet required.</p>
+                    <div class="ussd-code">
+                        <strong>*384*87#</strong>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="reporting-method">
+                    <div class="method-icon">
+                        <i class="fa fa-comments"></i>
+                    </div>
+                    <h4>SMS Reporting</h4>
+                    <p>Send an SMS with incident details to our dedicated reporting number</p>
+                    <div class="sms-number">
+                        <strong>0712 345 678</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Alternative Reporting Area -->
+
+<!-- Start Safety Tips Area -->
+<section class="callto-area section-gap relative">
+    <div class="overlay overlay-bg"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="safety-tips-content">
+                    <h2>Important Safety Reminders</h2>
+                    <div class="tips-list">
+                        <div class="tip-item">
+                            <i class="fa fa-check"></i>
+                            <span><strong>Your safety comes first</strong> - Never put yourself in danger to report an incident</span>
+                        </div>
+                        <div class="tip-item">
+                            <i class="fa fa-check"></i>
+                            <span><strong>Call emergency services first</strong> for life-threatening situations (999, 112, 911)</span>
+                        </div>
+                        <div class="tip-item">
+                            <i class="fa fa-check"></i>
+                            <span><strong>Be observant but discreet</strong> when witnessing incidents</span>
+                        </div>
+                        <div class="tip-item">
+                            <i class="fa fa-check"></i>
+                            <span><strong>Provide accurate information</strong> to help your community stay safe</span>
+                        </div>
+                        <div class="tip-item">
+                            <i class="fa fa-check"></i>
+                            <span><strong>All reports are confidential</strong> and can be made anonymously</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="emergency-contacts-box">
+                    <h4>Emergency Contacts</h4>
+                    <div class="contact-item">
+                        <strong>Police Emergency</strong>
+                        <span>999, 112, 911</span>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Ambulance</strong>
+                        <span>120, 112</span>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Fire Department</strong>
+                        <span>999, 112</span>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Child Protection</strong>
+                        <span>116</span>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Gender Violence</strong>
+                        <span>1195</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Safety Tips Area -->
+
+<!-- Start USSD Area -->
+<section class="ussd-area section-gap">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8">
+                <div class="ussd-content">
+                    <h2>No Internet? Report via USSD</h2>
+                    <p>You can report safety incidents from any mobile phone using our USSD service. No smartphone or internet connection required.</p>
+                    <div class="ussd-code-large">
+                        <h3>*384*87#</h3>
+                        <p>Free service available on all mobile networks in Kenya</p>
+                    </div>
+                    <div class="ussd-features">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul>
+                                    <li><span class="fa fa-check"></span> Report incidents anonymously</li>
+                                    <li><span class="fa fa-check"></span> All incident types supported</li>
+                                    <li><span class="fa fa-check"></span> Location-based reporting</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul>
+                                    <li><span class="fa fa-check"></span> No data charges</li>
+                                    <li><span class="fa fa-check"></span> Available 24/7</li>
+                                    <li><span class="fa fa-check"></span> Works on all phones</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="ussd-phone text-center">
+                    <img src="img/ussd-reporting.png" alt="USSD Incident Reporting" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End USSD Area -->
+{% endblock %}

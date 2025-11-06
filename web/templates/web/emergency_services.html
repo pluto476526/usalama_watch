@@ -1,0 +1,526 @@
+{% extends 'web/main.html' %}
+{% load static %}
+
+
+{% block main %}
+
+
+<!-- Start top-section Area -->
+<section class="banner-area relative" style="background-image: linear-gradient(rgba(0, 0, 30, 0.55), rgba(0, 0, 60, 0.55)), url({% static 'img/emergency_services.jpg' %});
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;">
+    <div class="overlay overlay-bg"></div>
+    <div class="container">
+        <div class="row justify-content-between align-items-center text-center banner-content">
+            <div class="col-lg-12">
+                <h1>Emergency Services</h1>
+                <p>Promoting quick Access to Police, Hospitals, Fire Services and Emergency Contacts Across Kenya</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End top-section Area -->
+
+
+<!-- Start Quick Access Area -->
+<section class="features-area section-gap-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title text-center">
+                    <h4>Immediate Help</h4>
+                    <h2>Quick Emergency Access</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row feature_inner">
+            <div class="col-lg-3 col-md-6">
+                <div class="feature-item police">
+                    <i class="fi flaticon-police"></i>
+                    <h4>Police Emergency</h4>
+                    <p>Immediate police response for crimes in progress, emergencies, and life-threatening situations</p>
+                    <div class="emergency-number">
+                        <span class="number">999</span>
+                        <span class="alternate">112, 911</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="feature-item ambulance">
+                    <i class="fi flaticon-ambulance"></i>
+                    <h4>Ambulance Services</h4>
+                    <p>Emergency medical services, ambulance dispatch, and immediate medical assistance</p>
+                    <div class="emergency-number">
+                        <span class="number">120</span>
+                        <span class="alternate">112</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="feature-item fire">
+                    <i class="fi flaticon-fire"></i>
+                    <h4>Fire Department</h4>
+                    <p>Fire emergencies, rescue operations, hazardous material incidents, and technical rescues</p>
+                    <div class="emergency-number">
+                        <span class="number">999</span>
+                        <span class="alternate">112</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="feature-item child">
+                    <i class="fi flaticon-family"></i>
+                    <h4>Child Protection</h4>
+                    <p>Child help line, child protection services, and reporting child abuse or emergencies</p>
+                    <div class="emergency-number">
+                        <span class="number">116</span>
+                        <span class="alternate">Child Help</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Quick Access Area -->
+
+<!-- Start Police Services Area -->
+<section class="about-area section-gap bg-light">
+    <div class="container">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-lg-6 col-md-12 about-left">
+                <img class="img-fluid" src="{% static 'img/police_lights.jpg' %}" alt="Kenya Police Services">
+            </div>
+            <div class="col-lg-6 col-md-12 about-right">
+                <div class="section-title text-left">
+                    <h4>Law Enforcement</h4>
+                    <h2>Police Services</h2>
+                </div>
+                <div class="service-description">
+                    <p>The Kenya Police Service provides law enforcement, crime prevention, and public safety services across the country. Contact them for emergencies, crime reporting, and safety concerns.</p>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h5>Emergency Contacts</h5>
+                        <div class="contact-numbers">
+                            <span class="number-item">999</span>
+                            <span class="number-item">112</span>
+                            <span class="number-item">911</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <h5>Police Headquarters</h5>
+                        <p>Vigilance House, Nairobi<br>Phone: +254 20 341 411</p>
+                    </div>
+                    <div class="contact-item">
+                        <h5>Police Airwing</h5>
+                        <p>Emergency air support and surveillance<br>Phone: +254 722 205 482</p>
+                    </div>
+                </div>
+                <div class="service-actions">
+                    <a href="#" class="primary-btn">Find Nearest Station</a>
+                    <a href="report.html" class="secondary-btn">Report Crime</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Police Services Area -->
+
+<!-- Start Hospital Services Area -->
+<section class="project-area section-gap-top">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-8">
+                <div class="section-title text-center">
+                    <h4>Medical Emergency</h4>
+                    <h2>Hospitals & Medical Services</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="hospital-card">
+                    <div class="hospital-type emergency">
+                        <div class="type-icon">
+                            <i class="fa fa-ambulance"></i>
+                        </div>
+                        <h4>Emergency Services</h4>
+                    </div>
+                    <div class="hospital-content">
+                        <h5>Ambulance Dispatch</h5>
+                        <p>Emergency medical services and ambulance response for critical medical situations</p>
+                        <div class="emergency-contact">
+                            <span class="contact-number">120</span>
+                            <span class="contact-alternate">112</span>
+                        </div>
+                        <ul class="service-features">
+                            <li>24/7 emergency response</li>
+                            <li>Advanced life support</li>
+                            <li>Critical care transport</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="hospital-card">
+                    <div class="hospital-type public">
+                        <div class="type-icon">
+                            <i class="fa fa-hospital-o"></i>
+                        </div>
+                        <h4>Public Hospitals</h4>
+                    </div>
+                    <div class="hospital-content">
+                        <h5>Major Public Hospitals</h5>
+                        <p>Government hospitals providing emergency and specialized medical care across Kenya</p>
+                        <div class="hospital-list">
+                            <div class="hospital-item">
+                                <strong>Kenyatta National Hospital</strong>
+                                <span>Nairobi: +254 20 272 6300</span>
+                            </div>
+                            <div class="hospital-item">
+                                <strong>Moi Teaching Hospital</strong>
+                                <span>Eldoret: +254 53 203 3471</span>
+                            </div>
+                            <div class="hospital-item">
+                                <strong>Coast General Hospital</strong>
+                                <span>Mombasa: +254 41 231 3574</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="hospital-card">
+                    <div class="hospital-type private">
+                        <div class="type-icon">
+                            <i class="fa fa-stethoscope"></i>
+                        </div>
+                        <h4>Private Hospitals</h4>
+                    </div>
+                    <div class="hospital-content">
+                        <h5>Major Private Hospitals</h5>
+                        <p>Private medical facilities with emergency departments and specialized care</p>
+                        <div class="hospital-list">
+                            <div class="hospital-item">
+                                <strong>Aga Khan Hospital</strong>
+                                <span>Nairobi: +254 20 366 2000</span>
+                            </div>
+                            <div class="hospital-item">
+                                <strong>Nairobi Hospital</strong>
+                                <span>Nairobi: +254 20 284 5000</span>
+                            </div>
+                            <div class="hospital-item">
+                                <strong>MP Shah Hospital</strong>
+                                <span>Nairobi: +254 20 429 7000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-lg-12 text-center">
+                <a href="#" class="primary-btn">View All Hospitals</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Hospital Services Area -->
+
+<!-- Start Fire Services Area -->
+<section class="testimonial-area relative section-gap bg-light" id="testimonial">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-12">
+                <div class="section-title text-center">
+                    <h4>Fire & Rescue</h4>
+                    <h2>Fire Department Services</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="fire-service">
+                    <div class="service-icon">
+                        <i class="fa fa-fire-extinguisher"></i>
+                    </div>
+                    <h4>Fire Emergencies</h4>
+                    <p>Response to structural fires, bush fires, vehicle fires, and other fire-related emergencies</p>
+                    <div class="emergency-contact">
+                        <span class="contact-number">999</span>
+                        <span class="contact-alternate">112</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="fire-service">
+                    <div class="service-icon">
+                        <i class="fa fa-life-ring"></i>
+                    </div>
+                    <h4>Rescue Operations</h4>
+                    <p>Technical rescue services including water rescue, height rescue, and confined space rescue</p>
+                    <div class="emergency-contact">
+                        <span class="contact-number">999</span>
+                        <span class="contact-alternate">112</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="fire-service">
+                    <div class="service-icon">
+                        <i class="fa fa-warning"></i>
+                    </div>
+                    <h4>Hazardous Materials</h4>
+                    <p>Response to chemical spills, gas leaks, and other hazardous material incidents</p>
+                    <div class="emergency-contact">
+                        <span class="contact-number">999</span>
+                        <span class="contact-alternate">112</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-lg-12">
+                <div class="fire-stations">
+                    <h4 class="text-center mb-4">Major Fire Stations</h4>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="station-item">
+                                <h5>Nairobi Central</h5>
+                                <p>Tom Mboya Street<br>+254 20 222 1811</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="station-item">
+                                <h5>Mombasa Central</h5>
+                                <p>Makadara Road<br>+254 41 222 1841</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="station-item">
+                                <h5>Kisumu Fire</h5>
+                                <p>Jomo Kenyatta Highway<br>+254 57 202 4086</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="station-item">
+                                <h5>Nakuru Fire</h5>
+                                <p>Kenyatta Avenue<br>+254 51 221 2554</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Fire Services Area -->
+
+<!-- Start Other Services Area -->
+<section class="about-area section-gap">
+    <div class="container">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-lg-6 col-md-12 about-right">
+                <div class="section-title text-left">
+                    <h4>Additional Support</h4>
+                    <h2>Other Emergency Services</h2>
+                </div>
+                <div class="other-services">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fa fa-child"></i>
+                        </div>
+                        <div class="service-content">
+                            <h5>Child Protection</h5>
+                            <p>Child helpline and protection services - <strong>116</strong></p>
+                            <span>Department of Children Services</span>
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fa fa-female"></i>
+                        </div>
+                        <div class="service-content">
+                            <h5>Gender Violence</h5>
+                            <p>Gender-based violence support - <strong>1195</strong></p>
+                            <span>Gender Violence Recovery Centre</span>
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <div class="service-content">
+                            <h5>Counseling Services</h5>
+                            <p>Mental health and counseling support</p>
+                            <span>+254 719 638 033 (Nairobi Women's Hospital)</span>
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fa fa-exclamation-triangle"></i>
+                        </div>
+                        <div class="service-content">
+                            <h5>Disaster Management</h5>
+                            <p>National Disaster Operations Center</p>
+                            <span>+254 20 222 7411</span>
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fa fa-road"></i>
+                        </div>
+                        <div class="service-content">
+                            <h5>Road Rescue</h5>
+                            <p>AA Kenya Road Rescue</p>
+                            <span>+254 711 563 563</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 about-left">
+                <img class="img-fluid" src="{% static 'img/other_emergency_services.jpg' %}" alt="Other Emergency Services">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Other Services Area -->
+
+<!-- Start Emergency Guide Area -->
+<section class="callto-area section-gap relative">
+    <div class="overlay overlay-bg"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="callto-content">
+                    <h2>Emergency Response Guide</h2>
+                    <p>Know what to do in different emergency situations</p>
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <div class="guide-item">
+                                <h5><i class="fa fa-medkit"></i> Medical Emergency</h5>
+                                <ul>
+                                    <li>Call 120 for ambulance</li>
+                                    <li>Check breathing and pulse</li>
+                                    <li>Do not move injured person</li>
+                                    <li>Keep patient warm and comfortable</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="guide-item">
+                                <h5><i class="fa fa-fire"></i> Fire Emergency</h5>
+                                <ul>
+                                    <li>Call 999 immediately</li>
+                                    <li>Evacuate the building</li>
+                                    <li>Use fire extinguisher if safe</li>
+                                    <li>Never use elevator during fire</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="guide-item">
+                                <h5><i class="fa fa-shield"></i> Crime in Progress</h5>
+                                <ul>
+                                    <li>Call 999 for police</li>
+                                    <li>Do not confront criminals</li>
+                                    <li>Note descriptions and details</li>
+                                    <li>Move to safe location</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="guide-item">
+                                <h5><i class="fa fa-car"></i> Road Accident</h5>
+                                <ul>
+                                    <li>Call 999 and 120</li>
+                                    <li>Set up warning triangles</li>
+                                    <li>Do not move injured people</li>
+                                    <li>Exchange information with others</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="emergency-resources">
+                    <h4>Emergency Resources</h4>
+                    <div class="resource-item">
+                        <i class="fa fa-download"></i>
+                        <div class="resource-content">
+                            <h5>Emergency Contacts PDF</h5>
+                            <a href="#" class="download-link">Download Now</a>
+                        </div>
+                    </div>
+                    <div class="resource-item">
+                        <i class="fa fa-print"></i>
+                        <div class="resource-content">
+                            <h5>Print Emergency Card</h5>
+                            <a href="#" class="download-link">Print for Home</a>
+                        </div>
+                    </div>
+                    <div class="resource-item">
+                        <i class="fa fa-mobile"></i>
+                        <div class="resource-content">
+                            <h5>Save to Phone</h5>
+                            <a href="#" class="download-link">Save Contacts</a>
+                        </div>
+                    </div>
+                    <div class="resource-item">
+                        <i class="fa fa-share-alt"></i>
+                        <div class="resource-content">
+                            <h5>Share with Family</h5>
+                            <a href="#" class="download-link">Share Contacts</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Emergency Guide Area -->
+
+<!-- Start USSD Area -->
+<section class="ussd-area section-gap">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8">
+                <div class="ussd-content">
+                    <h2>Access Emergency Services via USSD</h2>
+                    <p>Get emergency contacts and services information instantly using our USSD code. No internet required.</p>
+                    <div class="ussd-code">
+                        <h3>Dial: *384*87#</h3>
+                        <p>Free service available on all mobile networks</p>
+                    </div>
+                    <div class="ussd-features">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul>
+                                    <li><span class="fa fa-check"></span> Emergency contacts directory</li>
+                                    <li><span class="fa fa-check"></span> Nearest police stations</li>
+                                    <li><span class="fa fa-check"></span> Hospital locations</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul>
+                                    <li><span class="fa fa-check"></span> Fire station contacts</li>
+                                    <li><span class="fa fa-check"></span> Emergency response guide</li>
+                                    <li><span class="fa fa-check"></span> Quick incident reporting</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="ussd-phone text-center">
+                    <img src="img/ussd-emergency.png" alt="USSD Emergency Services" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End USSD Area -->
+{% endblock %}

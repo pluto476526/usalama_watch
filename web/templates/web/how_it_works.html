@@ -1,0 +1,550 @@
+{% extends 'web/main.html' %}
+{% load static %}
+
+
+{% block main %}
+
+
+<!-- Start top-section Area -->
+<section class="banner-area relative" style="background-image: linear-gradient(rgba(0, 0, 30, 0.55), rgba(0, 0, 60, 0.55)), url({% static 'img/how_it_works.jpg' %});
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;">
+    <div class="overlay overlay-bg"></div>
+    <div class="container">
+        <div class="row justify-content-between align-items-center text-center banner-content">
+            <div class="col-lg-12">
+                <h1>How It Works</h1>
+                <p>Understanding the Usalama Watch Community Safety Platform</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End top-section Area -->
+
+
+<!-- Start Platform Overview Area -->
+<section class="about-area section-gap">
+    <div class="container">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-lg-6 col-md-12 about-left">
+                <img class="img-fluid" src="{% static 'img/platform_overview.jpg' %}" alt="Usalama Watch Platform Overview" style="
+                    width: 100%;
+                    height: auto;
+                    max-height: 50rem;
+                    object-fit: cover;
+                    border-radius: 12px;
+                    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);">
+            </div>
+            <div class="col-lg-6 col-md-12 about-right">
+                <div class="section-title text-left">
+                    <h4>Community Safety</h4>
+                    <h2>Platform Overview</h2>
+                </div>
+                <div>
+                    <p>
+                        Usalama Watch is a comprehensive community safety platform that empowers Kenyan citizens 
+                        to report, track, and stay informed about safety incidents in their neighborhoods. 
+                        Our system combines modern technology with community collaboration to create safer environments.
+                    </p>
+                    <p>
+                        The platform operates through multiple channels including web, mobile, and USSD to ensure 
+                        accessibility for all Kenyans, regardless of their technology access or location.
+                    </p>
+                </div>
+                <div class="platform-features">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="feature-check">
+                                <i class="fa fa-check"></i>
+                                <span>Real-time Incident Reporting</span>
+                            </div>
+                            <div class="feature-check">
+                                <i class="fa fa-check"></i>
+                                <span>Live Safety Maps</span>
+                            </div>
+                            <div class="feature-check">
+                                <i class="fa fa-check"></i>
+                                <span>Community Alerts</span>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="feature-check">
+                                <i class="fa fa-check"></i>
+                                <span>USSD Access</span>
+                            </div>
+                            <div class="feature-check">
+                                <i class="fa fa-check"></i>
+                                <span>Emergency Services Directory</span>
+                            </div>
+                            <div class="feature-check">
+                                <i class="fa fa-check"></i>
+                                <span>Anonymous Reporting</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Platform Overview Area -->
+
+<!-- Start Reporting Process Area -->
+<section class="features-area section-gap-top bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title text-center">
+                    <h4>Step by Step</h4>
+                    <h2>How to Report an Incident</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <div class="step-icon">
+                        <i class="fi flaticon-alert"></i>
+                    </div>
+                    <h4>Witness or Experience</h4>
+                    <p>You witness a safety incident, crime, hazard, or emergency situation in your community</p>
+                    <div class="step-options">
+                        <span class="option-tag">Crime</span>
+                        <span class="option-tag">Accident</span>
+                        <span class="option-tag">Hazard</span>
+                        <span class="option-tag">Checkpoint</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <div class="step-icon">
+                        <i class="fi flaticon-smartphone"></i>
+                    </div>
+                    <h4>Choose Reporting Method</h4>
+                    <p>Select your preferred reporting channel based on your available technology and situation</p>
+                    <div class="step-options">
+                        <span class="option-tag">Website</span>
+                        <span class="option-tag">Mobile App</span>
+                        <span class="option-tag">USSD</span>
+                        <span class="option-tag">SMS</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <div class="step-icon">
+                        <i class="fi flaticon-form"></i>
+                    </div>
+                    <h4>Provide Details</h4>
+                    <p>Enter incident information including location, type, severity, and any relevant details or media</p>
+                    <div class="step-options">
+                        <span class="option-tag">Location</span>
+                        <span class="option-tag">Description</span>
+                        <span class="option-tag">Severity</span>
+                        <span class="option-tag">Media</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <div class="step-icon">
+                        <i class="fi flaticon-anonymous"></i>
+                    </div>
+                    <h4>Choose Anonymity</h4>
+                    <p>Decide whether to report anonymously or with your contact information for follow-up</p>
+                    <div class="step-options">
+                        <span class="option-tag">Anonymous</span>
+                        <span class="option-tag">Identified</span>
+                        <span class="option-tag">Optional Contact</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="process-step">
+                    <div class="step-number">5</div>
+                    <div class="step-icon">
+                        <i class="fi flaticon-verification"></i>
+                    </div>
+                    <h4>Verification Process</h4>
+                    <p>Our system verifies the report and cross-references with other community reports</p>
+                    <div class="step-options">
+                        <span class="option-tag">Auto-Verification</span>
+                        <span class="option-tag">Community Validation</span>
+                        <span class="option-tag">Location Check</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="process-step">
+                    <div class="step-number">6</div>
+                    <div class="step-icon">
+                        <i class="fi flaticon-bell"></i>
+                    </div>
+                    <h4>Community Alert</h4>
+                    <p>Verified incidents appear on the safety map and trigger alerts to nearby community members</p>
+                    <div class="step-options">
+                        <span class="option-tag">Map Update</span>
+                        <span class="option-tag">SMS Alerts</span>
+                        <span class="option-tag">Email Notifications</span>
+                        <span class="option-tag">App Push</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-lg-12 text-center">
+                <a href="report.html" class="primary-btn">Report an Incident Now</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Reporting Process Area -->
+
+<!-- Start Access Methods Area -->
+<section class="project-area section-gap-top">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-8">
+                <div class="section-title text-center">
+                    <h4>Multiple Channels</h4>
+                    <h2>How to Access Usalama Watch</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="access-method">
+                    <div class="method-header website">
+                        <div class="method-icon">
+                            <i class="fa fa-globe"></i>
+                        </div>
+                        <h4>Website</h4>
+                    </div>
+                    <div class="method-content">
+                        <h5>Full Platform Access</h5>
+                        <p>Access all features through our responsive website on any device with internet connection</p>
+                        <ul class="method-features">
+                            <li>Interactive safety maps</li>
+                            <li>Detailed incident reporting</li>
+                            <li>Emergency services directory</li>
+                            <li>Community forums</li>
+                            <li>Safety resources library</li>
+                        </ul>
+                        <div class="method-action">
+                            <a href="index.html" class="primary-btn">Visit Website</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="access-method">
+                    <div class="method-header mobile">
+                        <div class="method-icon">
+                            <i class="fa fa-mobile"></i>
+                        </div>
+                        <h4>Mobile App</h4>
+                    </div>
+                    <div class="method-content">
+                        <h5>On-the-Go Access</h5>
+                        <p>Download our mobile app for instant incident reporting and real-time safety alerts</p>
+                        <ul class="method-features">
+                            <li>Quick incident reporting</li>
+                            <li>Push notifications</li>
+                            <li>Offline reporting capability</li>
+                            <li>Location-based alerts</li>
+                            <li>Emergency contact integration</li>
+                        </ul>
+                        <div class="method-action">
+                            <a href="#" class="primary-btn">Download App</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="access-method">
+                    <div class="method-header ussd">
+                        <div class="method-icon">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <h4>USSD Service</h4>
+                    </div>
+                    <div class="method-content">
+                        <h5>No Internet Required</h5>
+                        <p>Access safety features from any mobile phone using our USSD code, no smartphone needed</p>
+                        <ul class="method-features">
+                            <li>Basic incident reporting</li>
+                            <li>Safety status checks</li>
+                            <li>Emergency contacts</li>
+                            <li>SMS alerts subscription</li>
+                            <li>Works on all networks</li>
+                        </ul>
+                        <div class="method-action">
+                            <div class="ussd-code-box">
+                                <strong>Dial: *384*87#</strong>
+                                <span>Free Service</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Access Methods Area -->
+
+<!-- Start Data Flow Area -->
+<section class="testimonial-area relative section-gap bg-light" id="testimonial">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-12">
+                <div class="section-title text-center">
+                    <h4>Behind the Scenes</h4>
+                    <h2>How Your Report Becomes Community Safety</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <div class="data-flow-step">
+                    <div class="flow-number">1</div>
+                    <div class="flow-icon">
+                        <i class="fa fa-user"></i>
+                    </div>
+                    <h4>User Report</h4>
+                    <p>Community member reports an incident through website, app, or USSD</p>
+                    <div class="flow-arrow">
+                        <i class="fa fa-arrow-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="data-flow-step">
+                    <div class="flow-number">2</div>
+                    <div class="flow-icon">
+                        <i class="fa fa-shield"></i>
+                    </div>
+                    <h4>Verification</h4>
+                    <p>System automatically verifies location and cross-references with other reports</p>
+                    <div class="flow-arrow">
+                        <i class="fa fa-arrow-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="data-flow-step">
+                    <div class="flow-number">3</div>
+                    <div class="flow-icon">
+                        <i class="fa fa-map-marker"></i>
+                    </div>
+                    <h4>Map Integration</h4>
+                    <p>Verified incident appears on live safety map with appropriate severity level</p>
+                    <div class="flow-arrow">
+                        <i class="fa fa-arrow-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="data-flow-step">
+                    <div class="flow-number">4</div>
+                    <div class="flow-icon">
+                        <i class="fa fa-bell"></i>
+                    </div>
+                    <h4>Community Alert</h4>
+                    <p>Nearby users receive instant notifications based on their location preferences</p>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-lg-12">
+                <div class="data-security">
+                    <div class="row align-items-center">
+                        <div class="col-lg-8">
+                            <h4>Data Security & Privacy</h4>
+                            <p>We take your privacy and security seriously. All reports are protected with encryption, 
+                            and anonymous reporting ensures your identity remains protected when needed.</p>
+                            <div class="security-features">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="security-item">
+                                            <i class="fa fa-lock"></i>
+                                            <span>End-to-End Encryption</span>
+                                        </div>
+                                        <div class="security-item">
+                                            <i class="fa fa-user-secret"></i>
+                                            <span>Anonymous Reporting</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="security-item">
+                                            <i class="fa fa-shield"></i>
+                                            <span>Data Protection Act Compliant</span>
+                                        </div>
+                                        <div class="security-item">
+                                            <i class="fa fa-ban"></i>
+                                            <span>No Data Selling</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="privacy-badge text-center">
+                                <i class="fa fa-shield"></i>
+                                <h5>Your Privacy Protected</h5>
+                                <p>We never share your personal information without consent</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Data Flow Area -->
+
+<!-- Start Community Impact Area -->
+<section class="about-area section-gap">
+    <div class="container">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-lg-6 col-md-12 about-right">
+                <div class="section-title text-left">
+                    <h4>Community Power</h4>
+                    <h2>How Communities Benefit</h2>
+                </div>
+                <div class="impact-list">
+                    <div class="impact-item">
+                        <div class="impact-icon">
+                            <i class="fa fa-line-chart"></i>
+                        </div>
+                        <div class="impact-content">
+                            <h5>Reduced Crime Rates</h5>
+                            <p>Communities using Usalama Watch have seen up to 45% reduction in criminal activities through increased vigilance</p>
+                        </div>
+                    </div>
+                    <div class="impact-item">
+                        <div class="impact-icon">
+                            <i class="fa fa-users"></i>
+                        </div>
+                        <div class="impact-content">
+                            <h5>Stronger Neighborhood Bonds</h5>
+                            <p>Community members work together, creating stronger social connections and mutual support systems</p>
+                        </div>
+                    </div>
+                    <div class="impact-item">
+                        <div class="impact-icon">
+                            <i class="fa fa-bullhorn"></i>
+                        </div>
+                        <div class="impact-content">
+                            <h5>Faster Emergency Response</h5>
+                            <p>Real-time reporting enables quicker response from emergency services and community watch groups</p>
+                        </div>
+                    </div>
+                    <div class="impact-item">
+                        <div class="impact-icon">
+                            <i class="fa fa-graduation-cap"></i>
+                        </div>
+                        <div class="impact-content">
+                            <h5>Safety Awareness</h5>
+                            <p>Increased community awareness about safety practices and emergency preparedness</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 about-left">
+                <img class="img-fluid" src="{% static 'img/community_impact.jpg' %}" alt="Community Impact" style="
+                    width: 100%;
+                    height: auto;
+                    max-height: 50rem;
+                    object-fit: cover;
+                    border-radius: 12px;
+                    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Community Impact Area -->
+
+<!-- Start FAQ Area -->
+<section class="callto-area section-gap relative">
+    <div class="overlay overlay-bg"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="callto-content">
+                    <h2>Frequently Asked Questions</h2>
+                    <p>Common questions about how Usalama Watch works</p>
+                    <div class="faq-list">
+                        <div class="faq-item">
+                            <h5>Is Usalama Watch free to use?</h5>
+                            <p>Yes, Usalama Watch is completely free for all community members. We believe safety should be accessible to everyone.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h5>Do I need a smartphone to use the service?</h5>
+                            <p>No, you can access all essential features through our USSD service (*384*87#) from any mobile phone.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h5>How is my privacy protected?</h5>
+                            <p>We offer anonymous reporting, encrypt all data, and comply with Kenya's Data Protection Act. We never sell your data.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h5>What types of incidents should I report?</h5>
+                            <p>Report any safety concerns: crimes, accidents, hazards, suspicious activities, or police checkpoints.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="get-started-box">
+                    <h4>Ready to Get Started?</h4>
+                    <p>Join thousands of Kenyans making their communities safer</p>
+                    <div class="start-options">
+                        <a href="report.html" class="primary-btn">Report First Incident</a>
+                        <a href="register.html" class="secondary-btn">Create Account</a>
+                        <div class="ussd-quick">
+                            <p>Or dial <strong>*384*87#</strong> from any phone</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End FAQ Area -->
+
+<!-- Start Partners Area -->
+<section class="partners-area">
+    <div class="container no-padding">
+        <div class="partners-wrap section-gap">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title text-center">
+                        <h4>Trusted Platform</h4>
+                        <h2>Working With Communities & Authorities</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center justify-content-center no-gutters">
+                <div class="col single-partner">
+                    <a href="#"><img class="mx-auto" src="img/partners/police-service.png" alt="Kenya Police Service"></a>
+                </div>
+                <div class="col single-partner">
+                    <a href="#"><img class="mx-auto" src="img/partners/community-org.png" alt="Community Organizations"></a>
+                </div>
+                <div class="col single-partner">
+                    <a href="#"><img class="mx-auto" src="img/partners/county-gov.png" alt="County Governments"></a>
+                </div>
+                <div class="col single-partner">
+                    <a href="#"><img class="mx-auto" src="img/partners/tech-partner.png" alt="Technology Partners"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Partners Area -->
+{% endblock %}

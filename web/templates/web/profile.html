@@ -1,0 +1,1085 @@
+{% extends 'web/main.html' %}
+{% load static %}
+
+
+{% block main %}
+
+
+<!-- Start top-section Area -->
+<section class="banner-area relative" data-parallax="scroll" data-image-src="img/neighborhood-watch-bg.jpg">
+    <div class="overlay overlay-bg"></div>
+    <div class="container">
+        <div class="row justify-content-between align-items-center text-center banner-content">
+            <div class="col-lg-12">
+                <h1>Jacob Miller</h1>
+                <p>Community Safety Advocate | Member since March 2023</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End top-section Area -->
+
+<!-- Start Profile Navigation -->
+<section class="features-area section-gap-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="profile-nav">
+                    <ul class="nav nav-pills justify-content-center" id="profileTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="profile-tab" data-toggle="pill" href="#profile" role="tab">
+                                <i class="fa fa-user"></i> Profile
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="settings-tab" data-toggle="pill" href="#settings" role="tab">
+                                <i class="fa fa-cog"></i> Settings
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="notifications-tab" data-toggle="pill" href="#notifications" role="tab">
+                                <i class="fa fa-bell"></i> Notifications
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="privacy-tab" data-toggle="pill" href="#privacy" role="tab">
+                                <i class="fa fa-shield"></i> Privacy
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="reports-tab" data-toggle="pill" href="#reports" role="tab">
+                                <i class="fa fa-flag"></i> My Reports
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Profile Navigation -->
+
+<!-- Start Profile Content -->
+<section class="about-area section-gap">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="tab-content" id="profileTabContent">
+                    
+                    <!-- Profile Tab -->
+                    <div class="tab-pane fade show active" id="profile" role="tabpanel">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="profile-sidebar">
+                                    <div class="profile-card">
+                                        <h4>Profile Information</h4>
+                                        <div class="info-item">
+                                            <strong>Member Status</strong>
+                                            <span class="badge badge-success">Verified Member</span>
+                                        </div>
+                                        <div class="info-item">
+                                            <strong>Trust Level</strong>
+                                            <div class="trust-level">
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" style="width: 85%"></div>
+                                                </div>
+                                                <span>85%</span>
+                                            </div>
+                                        </div>
+                                        <div class="info-item">
+                                            <strong>Join Date</strong>
+                                            <span>March 15, 2023</span>
+                                        </div>
+                                        <div class="info-item">
+                                            <strong>Last Active</strong>
+                                            <span>Today, 2:30 PM</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="profile-card">
+                                        <h4>Quick Actions</h4>
+                                        <div class="action-buttons">
+                                            <a href="report.html" class="action-btn">
+                                                <i class="fa fa-flag"></i>
+                                                <span>Report Incident</span>
+                                            </a>
+                                            <a href="neighborhood-watch.html" class="action-btn">
+                                                <i class="fa fa-users"></i>
+                                                <span>Join Watch Group</span>
+                                            </a>
+                                            <a href="safety-tips.html" class="action-btn">
+                                                <i class="fa fa-lightbulb-o"></i>
+                                                <span>Safety Tips</span>
+                                            </a>
+                                            <a href="emergency-services.html" class="action-btn">
+                                                <i class="fa fa-phone"></i>
+                                                <span>Emergency Contacts</span>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="profile-card">
+                                        <h4>My Watch Groups</h4>
+                                        <div class="watch-groups">
+                                            <div class="group-item">
+                                                <div class="group-icon">
+                                                    <i class="fa fa-home"></i>
+                                                </div>
+                                                <div class="group-info">
+                                                    <h6>Kileleshwa Estate Watch</h6>
+                                                    <span>Coordinator</span>
+                                                </div>
+                                            </div>
+                                            <div class="group-item">
+                                                <div class="group-icon">
+                                                    <i class="fa fa-building"></i>
+                                                </div>
+                                                <div class="group-info">
+                                                    <h6>Nairobi CBD Business Watch</h6>
+                                                    <span>Member</span>
+                                                </div>
+                                            </div>
+                                            <div class="group-item">
+                                                <div class="group-icon">
+                                                    <i class="fa fa-road"></i>
+                                                </div>
+                                                <div class="group-info">
+                                                    <h6>Mombasa Road Safety</h6>
+                                                    <span>Active Member</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="neighborhood-watch.html" class="secondary-btn btn-block text-center">Find More Groups</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-8">
+                                <div class="profile-main">
+                                    <div class="profile-section">
+                                        <h4>Personal Information</h4>
+                                        <form class="profile-form">
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <div class="form-group">
+                                                        <label for="first_name">First Name</label>
+                                                        <input type="text" class="form-control" id="first_name" value="John" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="form-group">
+                                                        <label for="last_name">Last Name</label>
+                                                        <input type="text" class="form-control" id="last_name" value="Doe" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <div class="form-group">
+                                                        <label for="email">Email Address</label>
+                                                        <input type="email" class="form-control" id="email" value="john.doe@email.com" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="form-group">
+                                                        <label for="phone">Phone Number</label>
+                                                        <input type="tel" class="form-control" id="phone" value="+254 712 345 678" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="bio">Bio</label>
+                                                <textarea class="form-control" id="bio" rows="3" placeholder="Tell us about yourself and your safety concerns">Community safety advocate with 2 years of experience in neighborhood watch programs. Passionate about creating safer communities through technology and collaboration.</textarea>
+                                            </div>
+                                            <button type="submit" class="primary-btn">Update Profile</button>
+                                        </form>
+                                    </div>
+
+                                    <div class="profile-section">
+                                        <h4>Location & Areas of Interest</h4>
+                                        <div class="location-preferences">
+                                            <div class="location-item">
+                                                <div class="location-icon">
+                                                    <i class="fa fa-home"></i>
+                                                </div>
+                                                <div class="location-info">
+                                                    <h6>Home Location</h6>
+                                                    <p>Kileleshwa, Nairobi</p>
+                                                    <small>Primary area for safety alerts</small>
+                                                </div>
+                                                <button class="location-edit-btn">
+                                                    <i class="fa fa-edit"></i>
+                                                </button>
+                                            </div>
+                                            <div class="location-item">
+                                                <div class="location-icon">
+                                                    <i class="fa fa-briefcase"></i>
+                                                </div>
+                                                <div class="location-info">
+                                                    <h6>Work Location</h6>
+                                                    <p>Nairobi CBD</p>
+                                                    <small>Receive alerts for this area</small>
+                                                </div>
+                                                <button class="location-edit-btn">
+                                                    <i class="fa fa-edit"></i>
+                                                </button>
+                                            </div>
+                                            <div class="location-item">
+                                                <div class="location-icon">
+                                                    <i class="fa fa-star"></i>
+                                                </div>
+                                                <div class="location-info">
+                                                    <h6>Other Areas</h6>
+                                                    <p>Westlands, Kilimani, Lavington</p>
+                                                    <small>Areas you frequently visit</small>
+                                                </div>
+                                                <button class="location-edit-btn">
+                                                    <i class="fa fa-edit"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <button class="secondary-btn">
+                                            <i class="fa fa-plus"></i> Add New Location
+                                        </button>
+                                    </div>
+
+                                    <div class="profile-section">
+                                        <h4>Safety Achievements</h4>
+                                        <div class="achievements-grid">
+                                            <div class="achievement-item">
+                                                <div class="achievement-icon">
+                                                    <i class="fa fa-shield"></i>
+                                                </div>
+                                                <div class="achievement-content">
+                                                    <h6>Safety Pioneer</h6>
+                                                    <p>First to report 10 critical incidents</p>
+                                                    <span class="achievement-date">Earned: April 2023</span>
+                                                </div>
+                                            </div>
+                                            <div class="achievement-item">
+                                                <div class="achievement-icon">
+                                                    <i class="fa fa-users"></i>
+                                                </div>
+                                                <div class="achievement-content">
+                                                    <h6>Community Leader</h6>
+                                                    <p>Started a neighborhood watch group</p>
+                                                    <span class="achievement-date">Earned: June 2023</span>
+                                                </div>
+                                            </div>
+                                            <div class="achievement-item">
+                                                <div class="achievement-icon">
+                                                    <i class="fa fa-check-circle"></i>
+                                                </div>
+                                                <div class="achievement-content">
+                                                    <h6>Verified Reporter</h6>
+                                                    <p>20+ verified incident reports</p>
+                                                    <span class="achievement-date">Earned: August 2023</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Settings Tab -->
+                    <div class="tab-pane fade" id="settings" role="tabpanel">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <div class="settings-section">
+                                    <h4>Account Settings</h4>
+                                    <form class="settings-form">
+                                        <div class="form-group">
+                                            <label for="language">Language Preference</label>
+                                            <select class="form-control nice-select" id="language">
+                                                <option value="en">English</option>
+                                                <option value="sw">Kiswahili</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="theme">Theme Preference</label>
+                                            <select class="form-control nice-select" id="theme">
+                                                <option value="light">Light Theme</option>
+                                                <option value="dark">Dark Theme</option>
+                                                <option value="auto">Auto (System Default)</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="map-style">Map Style Preference</label>
+                                            <select class="form-control nice-select" id="map-style">
+                                                <option value="standard">Standard Map</option>
+                                                <option value="satellite">Satellite View</option>
+                                                <option value="terrain">Terrain View</option>
+                                                <option value="dark">Dark Map</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label>Default Reporting Method</label>
+                                            <div class="radio-options">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="reporting_method" id="web_reporting" checked>
+                                                    <label class="form-check-label" for="web_reporting">
+                                                        Web Platform
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="reporting_method" id="app_reporting">
+                                                    <label class="form-check-label" for="app_reporting">
+                                                        Mobile App
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="reporting_method" id="ussd_reporting">
+                                                    <label class="form-check-label" for="ussd_reporting">
+                                                        USSD Service
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label>Emergency Contact Sharing</label>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="share_emergency" checked>
+                                                <label class="form-check-label" for="share_emergency">
+                                                    Allow trusted contacts to see my location during emergencies
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <button type="submit" class="primary-btn">Save Settings</button>
+                                    </form>
+                                </div>
+
+                                <div class="settings-section">
+                                    <h4>Safety Preferences</h4>
+                                    <div class="safety-preferences">
+                                        <div class="preference-item">
+                                            <div class="preference-info">
+                                                <h6>Default Incident Severity Filter</h6>
+                                                <p>Set which severity levels you want to see by default on the map</p>
+                                            </div>
+                                            <div class="preference-controls">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="checkbox" id="severity_critical" checked>
+                                                    <label class="form-check-label" for="severity_critical">Critical</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="checkbox" id="severity_high" checked>
+                                                    <label class="form-check-label" for="severity_high">High</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="checkbox" id="severity_medium" checked>
+                                                    <label class="form-check-label" for="severity_medium">Medium</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="checkbox" id="severity_low">
+                                                    <label class="form-check-label" for="severity_low">Low</label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="preference-item">
+                                            <div class="preference-info">
+                                                <h6>Auto-Refresh Map</h6>
+                                                <p>Automatically refresh incident data on the safety map</p>
+                                            </div>
+                                            <div class="preference-controls">
+                                                <select class="form-control form-control-sm" id="refresh_interval">
+                                                    <option value="0">Manual Refresh</option>
+                                                    <option value="30" selected>Every 30 seconds</option>
+                                                    <option value="60">Every 1 minute</option>
+                                                    <option value="300">Every 5 minutes</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="preference-item">
+                                            <div class="preference-info">
+                                                <h6>Travel Safety Alerts</h6>
+                                                <p>Receive safety updates for your planned routes</p>
+                                            </div>
+                                            <div class="preference-controls">
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input" type="checkbox" id="travel_alerts" checked>
+                                                    <label class="form-check-label" for="travel_alerts">Enable</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="primary-btn">Update Preferences</button>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="settings-sidebar">
+                                    <div class="settings-card">
+                                        <h5>Account Security</h5>
+                                        <div class="security-status">
+                                            <div class="status-item">
+                                                <i class="fa fa-check-circle text-success"></i>
+                                                <span>Strong Password</span>
+                                            </div>
+                                            <div class="status-item">
+                                                <i class="fa fa-times-circle text-warning"></i>
+                                                <span>2FA Not Enabled</span>
+                                                <button class="btn btn-sm btn-outline-primary">Enable</button>
+                                            </div>
+                                            <div class="status-item">
+                                                <i class="fa fa-check-circle text-success"></i>
+                                                <span>Email Verified</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="settings-card">
+                                        <h5>Connected Devices</h5>
+                                        <div class="devices-list">
+                                            <div class="device-item">
+                                                <div class="device-icon">
+                                                    <i class="fa fa-mobile"></i>
+                                                </div>
+                                                <div class="device-info">
+                                                    <strong>Samsung Galaxy S21</strong>
+                                                    <span>Last active: Today, 2:30 PM</span>
+                                                </div>
+                                                <button class="device-remove">
+                                                    <i class="fa fa-times"></i>
+                                                </button>
+                                            </div>
+                                            <div class="device-item">
+                                                <div class="device-icon">
+                                                    <i class="fa fa-laptop"></i>
+                                                </div>
+                                                <div class="device-info">
+                                                    <strong>Windows Desktop</strong>
+                                                    <span>Last active: Yesterday, 6:15 PM</span>
+                                                </div>
+                                                <button class="device-remove">
+                                                    <i class="fa fa-times"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <button class="secondary-btn btn-block">
+                                            <i class="fa fa-plus"></i> Add Current Device
+                                        </button>
+                                    </div>
+
+                                    <div class="settings-card danger-zone">
+                                        <h5 class="text-danger">Danger Zone</h5>
+                                        <div class="danger-actions">
+                                            <button class="btn btn-outline-danger btn-block">
+                                                <i class="fa fa-download"></i> Export My Data
+                                            </button>
+                                            <button class="btn btn-outline-danger btn-block">
+                                                <i class="fa fa-trash"></i> Delete Account
+                                            </button>
+                                        </div>
+                                        <small class="text-muted">These actions are irreversible. Proceed with caution.</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Notifications Tab -->
+                    <div class="tab-pane fade" id="notifications" role="tabpanel">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <div class="notifications-section">
+                                    <h4>Notification Preferences</h4>
+                                    <div class="notification-categories">
+                                        <div class="category-item">
+                                            <div class="category-header">
+                                                <h6>Safety Alerts</h6>
+                                                <p>Incident reports and safety warnings in your areas</p>
+                                            </div>
+                                            <div class="category-controls">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="checkbox" id="alert_email" checked>
+                                                    <label class="form-check-label" for="alert_email">Email</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="checkbox" id="alert_sms" checked>
+                                                    <label class="form-check-label" for="alert_sms">SMS</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="checkbox" id="alert_push" checked>
+                                                    <label class="form-check-label" for="alert_push">Push</label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="category-item">
+                                            <div class="category-header">
+                                                <h6>Neighborhood Watch</h6>
+                                                <p>Updates from your watch groups and community activities</p>
+                                            </div>
+                                            <div class="category-controls">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="checkbox" id="watch_email" checked>
+                                                    <label class="form-check-label" for="watch_email">Email</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="checkbox" id="watch_sms">
+                                                    <label class="form-check-label" for="watch_sms">SMS</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="checkbox" id="watch_push" checked>
+                                                    <label class="form-check-label" for="watch_push">Push</label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="category-item">
+                                            <div class="category-header">
+                                                <h6>Report Updates</h6>
+                                                <p>Status changes and comments on your incident reports</p>
+                                            </div>
+                                            <div class="category-controls">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="checkbox" id="report_email" checked>
+                                                    <label class="form-check-label" for="report_email">Email</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="checkbox" id="report_sms">
+                                                    <label class="form-check-label" for="report_sms">SMS</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="checkbox" id="report_push" checked>
+                                                    <label class="form-check-label" for="report_push">Push</label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="category-item">
+                                            <div class="category-header">
+                                                <h6>Community Updates</h6>
+                                                <p>News and updates from Usalama Watch platform</p>
+                                            </div>
+                                            <div class="category-controls">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="checkbox" id="community_email" checked>
+                                                    <label class="form-check-label" for="community_email">Email</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="checkbox" id="community_sms">
+                                                    <label class="form-check-label" for="community_sms">SMS</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="checkbox" id="community_push">
+                                                    <label class="form-check-label" for="community_push">Push</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="notification-settings">
+                                        <h5>Alert Radius</h5>
+                                        <div class="radius-setting">
+                                            <label for="alert_radius">Receive alerts within:</label>
+                                            <select class="form-control" id="alert_radius">
+                                                <option value="1">1 km radius</option>
+                                                <option value="3" selected>3 km radius</option>
+                                                <option value="5">5 km radius</option>
+                                                <option value="10">10 km radius</option>
+                                                <option value="0">All areas</option>
+                                            </select>
+                                        </div>
+
+                                        <h5>Quiet Hours</h5>
+                                        <div class="quiet-hours">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="quiet_hours">
+                                                <label class="form-check-label" for="quiet_hours">
+                                                    Enable quiet hours (only critical alerts during this time)
+                                                </label>
+                                            </div>
+                                            <div class="time-range">
+                                                <input type="time" class="form-control" value="22:00">
+                                                <span class="time-separator">to</span>
+                                                <input type="time" class="form-control" value="07:00">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <button class="primary-btn">Save Notification Settings</button>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="notifications-sidebar">
+                                    <div class="notification-stats">
+                                        <h5>Notification Summary</h5>
+                                        <div class="stat-item">
+                                            <span class="stat-label">Alerts This Week</span>
+                                            <span class="stat-value">12</span>
+                                        </div>
+                                        <div class="stat-item">
+                                            <span class="stat-label">Watch Group Updates</span>
+                                            <span class="stat-value">8</span>
+                                        </div>
+                                        <div class="stat-item">
+                                            <span class="stat-label">Report Responses</span>
+                                            <span class="stat-value">5</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="recent-alerts">
+                                        <h5>Recent Alerts</h5>
+                                        <div class="alert-item">
+                                            <div class="alert-icon critical">
+                                                <i class="fa fa-exclamation-triangle"></i>
+                                            </div>
+                                            <div class="alert-content">
+                                                <strong>Critical Incident</strong>
+                                                <p>Armed robbery reported in Westlands</p>
+                                                <span>2 hours ago</span>
+                                            </div>
+                                        </div>
+                                        <div class="alert-item">
+                                            <div class="alert-icon high">
+                                                <i class="fa fa-car"></i>
+                                            </div>
+                                            <div class="alert-content">
+                                                <strong>Road Accident</strong>
+                                                <p>Accident on Mombasa Road near ABC</p>
+                                                <span>5 hours ago</span>
+                                            </div>
+                                        </div>
+                                        <div class="alert-item">
+                                            <div class="alert-icon medium">
+                                                <i class="fa fa-users"></i>
+                                            </div>
+                                            <div class="alert-content">
+                                                <strong>Watch Group Meeting</strong>
+                                                <p>Monthly meeting scheduled for Friday</p>
+                                                <span>1 day ago</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Privacy Tab -->
+                    <div class="tab-pane fade" id="privacy" role="tabpanel">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <div class="privacy-section">
+                                    <h4>Privacy Settings</h4>
+                                    <div class="privacy-options">
+                                        <div class="privacy-item">
+                                            <div class="privacy-info">
+                                                <h6>Profile Visibility</h6>
+                                                <p>Who can see your profile information and activity</p>
+                                            </div>
+                                            <div class="privacy-controls">
+                                                <select class="form-control" id="profile_visibility">
+                                                    <option value="public">Public</option>
+                                                    <option value="community" selected>Community Members Only</option>
+                                                    <option value="private">Private</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="privacy-item">
+                                            <div class="privacy-info">
+                                                <h6>Report Anonymity</h6>
+                                                <p>Default setting for new incident reports</p>
+                                            </div>
+                                            <div class="privacy-controls">
+                                                <select class="form-control" id="default_anonymity">
+                                                    <option value="anonymous" selected>Always Anonymous</option>
+                                                    <option value="identified">Identified When Necessary</option>
+                                                    <option value="always_identified">Always Identified</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="privacy-item">
+                                            <div class="privacy-info">
+                                                <h6>Location Sharing</h6>
+                                                <p>Control how your location data is used and shared</p>
+                                            </div>
+                                            <div class="privacy-controls">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="location_tracking" checked>
+                                                    <label class="form-check-label" for="location_tracking">
+                                                        Allow location tracking for safety alerts
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="location_aggregate" checked>
+                                                    <label class="form-check-label" for="location_aggregate">
+                                                        Include my data in community safety analytics (anonymous)
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="location_partners">
+                                                    <label class="form-check-label" for="location_partners">
+                                                        Share anonymized data with safety partners
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="privacy-item">
+                                            <div class="privacy-info">
+                                                <h6>Data Retention</h6>
+                                                <p>How long we keep your personal data and activity history</p>
+                                            </div>
+                                            <div class="privacy-controls">
+                                                <select class="form-control" id="data_retention">
+                                                    <option value="3">3 months</option>
+                                                    <option value="6">6 months</option>
+                                                    <option value="12" selected>1 year</option>
+                                                    <option value="24">2 years</option>
+                                                    <option value="indefinite">Indefinitely</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="privacy-item">
+                                            <div class="privacy-info">
+                                                <h6>Contact Preferences</h6>
+                                                <p>How other community members can contact you</p>
+                                            </div>
+                                            <div class="privacy-controls">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="contact_watch_groups" checked>
+                                                    <label class="form-check-label" for="contact_watch_groups">
+                                                        Allow watch group members to contact me
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="contact_verified">
+                                                    <label class="form-check-label" for="contact_verified">
+                                                        Allow verified community members to contact me
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="contact_public">
+                                                    <label class="form-check-label" for="contact_public">
+                                                        Allow anyone to contact me through the platform
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <button class="primary-btn">Save Privacy Settings</button>
+                                </div>
+
+                                <div class="privacy-section">
+                                    <h4>Data & Permissions</h4>
+                                    <div class="data-permissions">
+                                        <div class="permission-item">
+                                            <div class="permission-info">
+                                                <h6>Connected Services</h6>
+                                                <p>Third-party services connected to your account</p>
+                                            </div>
+                                            <div class="permission-controls">
+                                                <div class="service-item">
+                                                    <span>Google Maps</span>
+                                                    <span class="badge badge-success">Connected</span>
+                                                    <button class="btn btn-sm btn-outline-secondary">Disconnect</button>
+                                                </div>
+                                                <div class="service-item">
+                                                    <span>Emergency Services API</span>
+                                                    <span class="badge badge-success">Active</span>
+                                                    <button class="btn btn-sm btn-outline-secondary">Manage</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="permission-item">
+                                            <div class="permission-info">
+                                                <h6>App Permissions</h6>
+                                                <p>Permissions granted to mobile app and website</p>
+                                            </div>
+                                            <div class="permission-controls">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="perm_location" checked>
+                                                    <label class="form-check-label" for="perm_location">
+                                                        Location Access
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="perm_notifications" checked>
+                                                    <label class="form-check-label" for="perm_notifications">
+                                                        Push Notifications
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="perm_camera">
+                                                    <label class="form-check-label" for="perm_camera">
+                                                        Camera Access
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="perm_contacts">
+                                                    <label class="form-check-label" for="perm_contacts">
+                                                        Contact Synchronization
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="privacy-sidebar">
+                                    <div class="privacy-status">
+                                        <h5>Privacy Status</h5>
+                                        <div class="status-summary">
+                                            <div class="status-item">
+                                                <i class="fa fa-shield text-success"></i>
+                                                <div class="status-content">
+                                                    <strong>High Privacy</strong>
+                                                    <small>Your settings provide strong privacy protection</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="data-actions">
+                                        <h5>Data Management</h5>
+                                        <div class="action-buttons">
+                                            <button class="btn btn-outline-primary btn-block">
+                                                <i class="fa fa-download"></i> Download My Data
+                                            </button>
+                                            <button class="btn btn-outline-warning btn-block">
+                                                <i class="fa fa-eraser"></i> Clear Activity History
+                                            </button>
+                                            <button class="btn btn-outline-info btn-block">
+                                                <i class="fa fa-eye"></i> View Privacy Policy
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <div class="security-tips">
+                                        <h5>Privacy Tips</h5>
+                                        <div class="tip-item">
+                                            <i class="fa fa-lightbulb-o"></i>
+                                            <p>Use anonymous reporting for sensitive incidents</p>
+                                        </div>
+                                        <div class="tip-item">
+                                            <i class="fa fa-lightbulb-o"></i>
+                                            <p>Regularly review your connected devices</p>
+                                        </div>
+                                        <div class="tip-item">
+                                            <i class="fa fa-lightbulb-o"></i>
+                                            <p>Enable two-factor authentication for extra security</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Reports Tab -->
+                    <div class="tab-pane fade" id="reports" role="tabpanel">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="reports-header">
+                                    <h4>My Incident Reports</h4>
+                                    <div class="reports-stats">
+                                        <div class="stat-badge">
+                                            <span class="stat-number">24</span>
+                                            <span class="stat-label">Total Reports</span>
+                                        </div>
+                                        <div class="stat-badge">
+                                            <span class="stat-number">18</span>
+                                            <span class="stat-label">Verified</span>
+                                        </div>
+                                        <div class="stat-badge">
+                                            <span class="stat-number">6</span>
+                                            <span class="stat-label">Pending</span>
+                                        </div>
+                                        <div class="stat-badge">
+                                            <span class="stat-number">0</span>
+                                            <span class="stat-label">Rejected</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="reports-filters">
+                                    <div class="row">
+                                        <div class="col-lg-3">
+                                            <select class="form-control" id="report_status">
+                                                <option value="">All Statuses</option>
+                                                <option value="verified">Verified</option>
+                                                <option value="pending">Pending</option>
+                                                <option value="rejected">Rejected</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <select class="form-control" id="report_type">
+                                                <option value="">All Types</option>
+                                                <option value="crime">Criminal Activity</option>
+                                                <option value="accident">Road Accident</option>
+                                                <option value="hazard">Public Hazard</option>
+                                                <option value="checkpoint">Police Checkpoint</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <input type="date" class="form-control" id="report_date">
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <button class="primary-btn btn-block">Filter Reports</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="reports-list">
+                                    <div class="report-item verified">
+                                        <div class="report-status">
+                                            <span class="status-badge verified">Verified</span>
+                                        </div>
+                                        <div class="report-content">
+                                            <h6>Armed Robbery Attempt</h6>
+                                            <p class="report-location">Westlands, Nairobi</p>
+                                            <p class="report-description">Two armed individuals attempted to rob a supermarket. Police responded quickly.</p>
+                                            <div class="report-meta">
+                                                <span class="report-date">Today, 2:30 PM</span>
+                                                <span class="report-severity critical">Critical</span>
+                                                <span class="report-anonymous">
+                                                    <i class="fa fa-user-secret"></i> Anonymous
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="report-actions">
+                                            <button class="btn btn-sm btn-outline-primary">View Details</button>
+                                            <button class="btn btn-sm btn-outline-secondary">Edit</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="report-item verified">
+                                        <div class="report-status">
+                                            <span class="status-badge verified">Verified</span>
+                                        </div>
+                                        <div class="report-content">
+                                            <h6>Road Accident - Multiple Vehicles</h6>
+                                            <p class="report-location">Mombasa Road near ABC Place</p>
+                                            <p class="report-description">Three-car collision causing major traffic jam. Ambulance dispatched.</p>
+                                            <div class="report-meta">
+                                                <span class="report-date">Yesterday, 5:45 PM</span>
+                                                <span class="report-severity high">High</span>
+                                                <span class="report-identified">
+                                                    <i class="fa fa-user"></i> Identified
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="report-actions">
+                                            <button class="btn btn-sm btn-outline-primary">View Details</button>
+                                            <button class="btn btn-sm btn-outline-secondary">Edit</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="report-item pending">
+                                        <div class="report-status">
+                                            <span class="status-badge pending">Pending Review</span>
+                                        </div>
+                                        <div class="report-content">
+                                            <h6>Suspicious Activity Reported</h6>
+                                            <p class="report-location">Kilimani, Nairobi</p>
+                                            <p class="report-description">Group of individuals behaving suspiciously near residential area.</p>
+                                            <div class="report-meta">
+                                                <span class="report-date">2 days ago</span>
+                                                <span class="report-severity medium">Medium</span>
+                                                <span class="report-anonymous">
+                                                    <i class="fa fa-user-secret"></i> Anonymous
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="report-actions">
+                                            <button class="btn btn-sm btn-outline-primary">View Details</button>
+                                            <button class="btn btn-sm btn-outline-secondary">Edit</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="report-item verified">
+                                        <div class="report-status">
+                                            <span class="status-badge verified">Verified</span>
+                                        </div>
+                                        <div class="report-content">
+                                            <h6>Fallen Tree Blocking Road</h6>
+                                            <p class="report-location">Kileleshwa, Nairobi</p>
+                                            <p class="report-description">Large tree fell during storm, blocking entire road. Authorities notified.</p>
+                                            <div class="report-meta">
+                                                <span class="report-date">3 days ago</span>
+                                                <span class="report-severity medium">Medium</span>
+                                                <span class="report-identified">
+                                                    <i class="fa fa-user"></i> Identified
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="report-actions">
+                                            <button class="btn btn-sm btn-outline-primary">View Details</button>
+                                            <button class="btn btn-sm btn-outline-secondary">Edit</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="reports-pagination">
+                                    <nav>
+                                        <ul class="pagination justify-content-center">
+                                            <li class="page-item disabled">
+                                                <a class="page-link" href="#">Previous</a>
+                                            </li>
+                                            <li class="page-item active">
+                                                <a class="page-link" href="#">1</a>
+                                            </li>
+                                            <li class="page-item">
+                                                <a class="page-link" href="#">2</a>
+                                            </li>
+                                            <li class="page-item">
+                                                <a class="page-link" href="#">3</a>
+                                            </li>
+                                            <li class="page-item">
+                                                <a class="page-link" href="#">Next</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Profile Content -->
+
+<!-- Start Emergency Contacts Area -->
+<section class="callto-area section-gap relative">
+    <div class="overlay overlay-bg"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="emergency-contacts-content text-center">
+                    <h2>Emergency Contacts Always Available</h2>
+                    <p>Quick access to emergency services from anywhere on the platform</p>
+                    <div class="emergency-buttons">
+                        <a href="emergency-services.html" class="primary-btn">
+                            <i class="fa fa-phone"></i> View All Emergency Contacts
+                        </a>
+                        <button class="secondary-btn" id="quick-call">
+                            <i class="fa fa-ambulance"></i> Quick Call: 999
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Emergency Contacts Area -->
+{% endblock %}

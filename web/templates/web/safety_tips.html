@@ -1,0 +1,475 @@
+{% extends 'web/main.html' %}
+{% load static %}
+
+
+{% block main %}
+
+
+
+<!-- Start top-section Area -->
+<section class="banner-area relative" id="home" style="background-image: linear-gradient(rgba(0, 0, 30, 0.55), rgba(0, 0, 60, 0.55)), url({% static 'img/safety_tips.jpg' %});
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;">
+    <div class="overlay overlay-bg"></div>
+    <div class="container">
+        <div class="row justify-content-between align-items-center text-center banner-content">
+            <div class="col-lg-12">
+                <h1>Safety Tips</h1>
+                <p>Essential Crime Prevention and Personal Safety Advice for Kenyan Communities</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End top-section Area -->
+
+
+<!-- Start Quick Tips Area -->
+<section class="features-area section-gap-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title text-center">
+                    <h4>Essential Knowledge</h4>
+                    <h2>Quick Safety Tips</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row feature_inner">
+            <div class="col-lg-3 col-md-6">
+                <div class="feature-item">
+                    <i class="fi flaticon-phone"></i>
+                    <h4>Emergency Numbers</h4>
+                    <p>Save emergency contacts: 999, 112, 911. Program them into your phone speed dial and teach children how to use them.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="feature-item">
+                    <i class="fi flaticon-awareness"></i>
+                    <h4>Stay Alert</h4>
+                    <p>Always be aware of your surroundings. Avoid using phones while walking in public and trust your instincts about people and places.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="feature-item">
+                    <i class="fi flaticon-light"></i>
+                    <h4>Well-Lit Areas</h4>
+                    <p>Walk in well-lit areas at night. Park your car in illuminated spots and avoid dark shortcuts through alleys or abandoned areas.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="feature-item">
+                    <i class="fi flaticon-group"></i>
+                    <h4>Travel in Groups</h4>
+                    <p>There's safety in numbers. When possible, travel with others, especially at night or in unfamiliar neighborhoods.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Quick Tips Area -->
+
+<!-- Start Personal Safety Area -->
+<section class="about-area section-gap bg-light">
+    <div class="container">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-lg-6 col-md-12 about-right">
+                <div class="section-title text-left">
+                    <h4>On The Go</h4>
+                    <h2>Personal Safety</h2>
+                </div>
+                <div class="tips-list">
+                    <div class="tip-item">
+                        <div class="tip-icon">
+                            <i class="fa fa-walking"></i>
+                        </div>
+                        <div class="tip-content">
+                            <h5>Walking Safety</h5>
+                            <p>Walk confidently and be aware of your surroundings. Avoid displaying expensive phones or jewelry in public.</p>
+                        </div>
+                    </div>
+                    <div class="tip-item">
+                        <div class="tip-icon">
+                            <i class="fa fa-bus"></i>
+                        </div>
+                        <div class="tip-content">
+                            <h5>Public Transport</h5>
+                            <p>Use registered matatus and buses. Sit near the driver and keep bags on your lap, not overhead compartments.</p>
+                        </div>
+                    </div>
+                    <div class="tip-item">
+                        <div class="tip-icon">
+                            <i class="fa fa-car"></i>
+                        </div>
+                        <div class="tip-content">
+                            <h5>Vehicle Safety</h5>
+                            <p>Keep doors locked while driving. Park in secure, well-lit areas and check backseat before entering your vehicle.</p>
+                        </div>
+                    </div>
+                    <div class="tip-item">
+                        <div class="tip-icon">
+                            <i class="fa fa-money"></i>
+                        </div>
+                        <div class="tip-content">
+                            <h5>ATM Safety</h5>
+                            <p>Use ATMs in well-lit, secure locations. Shield your PIN and put money away before leaving the machine.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 about-left">
+                <img class="img-fluid" src="{% static 'img/personal_safety.jpg' %}" alt="Personal Safety Tips" style="
+                    width: 100%;
+                    height: auto;
+                    max-height: 50rem;
+                    object-fit: cover;
+                    border-radius: 12px;
+                    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Personal Safety Area -->
+
+<!-- Start Home Security Area -->
+<section class="project-area section-gap-top">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-8">
+                <div class="section-title text-center">
+                    <h4>Your Sanctuary</h4>
+                    <h2>Home Security Tips</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="security-tip">
+                    <div class="tip-header">
+                        <div class="tip-number">01</div>
+                        <div class="tip-icon">
+                            <i class="fa fa-lock"></i>
+                        </div>
+                    </div>
+                    <h4>Doors & Windows</h4>
+                    <p>Install quality locks on all doors and windows. Use deadbolts and always lock up when leaving, even for short periods.</p>
+                    <ul class="tip-details">
+                        <li>Install peepholes in main doors</li>
+                        <li>Use window security grills</li>
+                        <li>Replace flimsy door frames</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="security-tip">
+                    <div class="tip-header">
+                        <div class="tip-number">02</div>
+                        <div class="tip-icon">
+                            <i class="fa fa-lightbulb-o"></i>
+                        </div>
+                    </div>
+                    <h4>Lighting & Visibility</h4>
+                    <p>Keep your property well-lit. Use motion-sensor lights and trim shrubs near windows to eliminate hiding spots.</p>
+                    <ul class="tip-details">
+                        <li>Install outdoor motion lights</li>
+                        <li>Use timer switches when away</li>
+                        <li>Keep perimeter clear and visible</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="security-tip">
+                    <div class="tip-header">
+                        <div class="tip-number">03</div>
+                        <div class="tip-icon">
+                            <i class="fa fa-eye"></i>
+                        </div>
+                    </div>
+                    <h4>Neighborhood Watch</h4>
+                    <p>Join or start a neighborhood watch program. Know your neighbors and look out for each other's properties.</p>
+                    <ul class="tip-details">
+                        <li>Exchange contact with neighbors</li>
+                        <li>Report suspicious activity</li>
+                        <li>Create community alert groups</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="security-tip">
+                    <div class="tip-header">
+                        <div class="tip-number">04</div>
+                        <div class="tip-icon">
+                            <i class="fa fa-bell"></i>
+                        </div>
+                    </div>
+                    <h4>Security Systems</h4>
+                    <p>Consider installing security systems. Even simple measures like alarms or cameras can deter potential burglars.</p>
+                    <ul class="tip-details">
+                        <li>Install alarm systems</li>
+                        <li>Use CCTV cameras</li>
+                        <li>Get a guard dog if possible</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="security-tip">
+                    <div class="tip-header">
+                        <div class="tip-number">05</div>
+                        <div class="tip-icon">
+                            <i class="fa fa-calendar"></i>
+                        </div>
+                    </div>
+                    <h4>When Traveling</h4>
+                    <p>Make your home look occupied when away. Use light timers, stop mail delivery, and ask neighbors to watch your house.</p>
+                    <ul class="tip-details">
+                        <li>Use light timer switches</li>
+                        <li>Ask neighbors to collect mail</li>
+                        <li>Don't announce travel on social media</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="security-tip">
+                    <div class="tip-header">
+                        <div class="tip-number">06</div>
+                        <div class="tip-icon">
+                            <i class="fa fa-key"></i>
+                        </div>
+                    </div>
+                    <h4>Key Management</h4>
+                    <p>Be careful with keys. Don't hide them outside and change locks when you move into a new home or lose keys.</p>
+                    <ul class="tip-details">
+                        <li>Don't label keys with addresses</li>
+                        <li>Change locks after moving in</li>
+                        <li>Limit who has spare keys</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Home Security Area -->
+
+<!-- Start Emergency Preparedness Area -->
+<section class="testimonial-area relative section-gap bg-light" id="testimonial">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-12">
+                <div class="section-title text-center">
+                    <h4>Be Prepared</h4>
+                    <h2>Emergency Preparedness</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="emergency-plan">
+                    <div class="plan-icon">
+                        <i class="fa fa-phone"></i>
+                    </div>
+                    <h4>Emergency Contacts</h4>
+                    <p>Keep a list of emergency numbers by every phone and saved in your mobile. Include police, ambulance, fire, and trusted neighbors.</p>
+                    <div class="contact-list">
+                        <div class="contact-item">
+                            <strong>Police:</strong> 999, 112, 911
+                        </div>
+                        <div class="contact-item">
+                            <strong>Ambulance:</strong> 120, 112
+                        </div>
+                        <div class="contact-item">
+                            <strong>Fire:</strong> 999, 112
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="emergency-plan">
+                    <div class="plan-icon">
+                        <i class="fa fa-medkit"></i>
+                    </div>
+                    <h4>First Aid Kit</h4>
+                    <p>Maintain a well-stocked first aid kit at home and in your car. Know basic first aid procedures and CPR.</p>
+                    <ul class="kit-items">
+                        <li>Bandages and gauze</li>
+                        <li>Antiseptic wipes</li>
+                        <li>Pain relievers</li>
+                        <li>Emergency blanket</li>
+                        <li>Flashlight and batteries</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="emergency-plan">
+                    <div class="plan-icon">
+                        <i class="fa fa-home"></i>
+                    </div>
+                    <h4>Family Emergency Plan</h4>
+                    <p>Create and practice a family emergency plan. Include meeting points and communication methods if separated.</p>
+                    <ul class="plan-steps">
+                        <li>Designate meeting spots</li>
+                        <li>Practice emergency drills</li>
+                        <li>Keep important documents safe</li>
+                        <li>Prepare emergency supplies</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Emergency Preparedness Area -->
+
+<!-- Start Road Safety Area -->
+<section class="about-area section-gap">
+    <div class="container">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-lg-6 col-md-12 about-left">
+                <img class="img-fluid" src="{% static 'img/driving.jpg' %}" alt="Road Safety Tips" style="
+                    width: 100%;
+                    height: auto;
+                    max-height: 50rem;
+                    object-fit: cover;
+                    border-radius: 12px;
+                    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);">
+            </div>
+            <div class="col-lg-6 col-md-12 about-right">
+                <div class="section-title text-left">
+                    <h4>On The Road</h4>
+                    <h2>Road Safety Tips</h2>
+                </div>
+                <div class="road-tips">
+                    <div class="road-tip">
+                        <h5><i class="fa fa-car"></i> Defensive Driving</h5>
+                        <p>Always expect the unexpected from other road users. Maintain safe following distances and avoid distractions while driving.</p>
+                    </div>
+                    <div class="road-tip">
+                        <h5><i class="fa fa-moon-o"></i> Night Driving</h5>
+                        <p>Reduce speed at night and ensure all lights are working. Be extra cautious of pedestrians and cyclists.</p>
+                    </div>
+                    <div class="road-tip">
+                        <h5><i class="fa fa-umbrella"></i> Weather Conditions</h5>
+                        <p>Adjust driving for rain and poor visibility. Slow down, increase following distance, and use headlights in heavy rain.</p>
+                    </div>
+                    <div class="road-tip">
+                        <h5><i class="fa fa-taxi"></i> Public Transport</h5>
+                        <p>Use licensed taxis and matatus. Sit behind the driver when possible and be aware of your belongings at all times.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Road Safety Area -->
+
+<!-- Start Cyber Safety Area -->
+<section class="callto-area section-gap relative">
+    <div class="overlay overlay-bg"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="callto-content">
+                    <h2>Cyber Safety Tips</h2>
+                    <p>Protect yourself in the digital world with these essential online safety practices</p>
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <div class="cyber-tip">
+                                <i class="fa fa-shield"></i>
+                                <h5>Strong Passwords</h5>
+                                <p>Use unique, complex passwords for different accounts and enable two-factor authentication where available.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="cyber-tip">
+                                <i class="fa fa-wifi"></i>
+                                <h5>Secure Connections</h5>
+                                <p>Avoid using public Wi-Fi for sensitive transactions. Use VPNs when accessing personal information on public networks.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="cyber-tip">
+                                <i class="fa fa-user-secret"></i>
+                                <h5>Privacy Settings</h5>
+                                <p>Regularly review and adjust privacy settings on social media. Be cautious about sharing personal information online.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="cyber-tip">
+                                <i class="fa fa-exclamation-triangle"></i>
+                                <h5>Online Scams</h5>
+                                <p>Be wary of unsolicited emails and messages. Never share financial information or send money to unknown parties.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="download-resources">
+                    <h4>Safety Resources</h4>
+                    <div class="resource-item">
+                        <i class="fa fa-file-pdf-o"></i>
+                        <div class="resource-content">
+                            <h5>Safety Handbook</h5>
+                            <a href="#" class="download-link">Download PDF</a>
+                        </div>
+                    </div>
+                    <div class="resource-item">
+                        <i class="fa fa-phone"></i>
+                        <div class="resource-content">
+                            <h5>Emergency Contacts</h5>
+                            <a href="#" class="download-link">Download List</a>
+                        </div>
+                    </div>
+                    <div class="resource-item">
+                        <i class="fa fa-video-camera"></i>
+                        <div class="resource-content">
+                            <h5>Safety Videos</h5>
+                            <a href="#" class="download-link">Watch Tutorials</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Cyber Safety Area -->
+
+<!-- Start USSD Area -->
+<section class="ussd-area section-gap">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8">
+                <div class="ussd-content">
+                    <h2>Remember These Tips With USSD</h2>
+                    <p>Access safety tips and emergency contacts anytime using our USSD service. No internet required.</p>
+                    <div class="ussd-code">
+                        <h3>Dial: *384*87#</h3>
+                        <p>Free service available on all networks</p>
+                    </div>
+                    <div class="ussd-features">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul>
+                                    <li><span class="fa fa-check"></span> Emergency contacts directory</li>
+                                    <li><span class="fa fa-check"></span> Personal safety tips</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul>
+                                    <li><span class="fa fa-check"></span> Home security advice</li>
+                                    <li><span class="fa fa-check"></span> Road safety information</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="ussd-phone text-center">
+                    <img src="img/ussd-safety.png" alt="USSD Safety Tips" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End USSD Area -->
+
+{% endblock %}

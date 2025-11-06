@@ -1,0 +1,406 @@
+{% extends 'web/main.html' %}
+{% load static %}
+
+{% block main %}
+<!-- start banner Area -->
+<section class="home-banner-area relative" id="home" data-parallax="scroll" data-image-src="{% static 'img/main_hero.jpg' %}">
+	<div class="overlay-bg overlay"></div>
+	<h1 class="template-name">Usalama Watch</h1>
+	<div class="container">
+		<div class="row fullscreen">
+			<div class="banner-content col-lg-12">
+				<p>Community-Powered Safety Platform</p>
+				<h1>
+					Your Neighborhood <br>
+					Safety Network
+				</h1>
+				<p class="banner-subtitle">Report incidents, stay informed, and build safer communities together across Kenya</p>
+				<div class="banner-btns">
+					<a href="{% url 'report_incident' %}" class="primary-btn">Report Incident</a>
+					<a href="[% url 'incidents' %}" class="genric-btn success e-large">View Safety Map</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="head-bottom-meta">
+		<div class="d-flex meta-left no-padding">
+			<a href="#"><span class="fa fa-facebook-f"></span></a>
+			<a href="#"><span class="fa fa-twitter"></span></a>
+			<a href="#"><span class="fa fa-instagram"></span></a>
+			<a href="#"><span class="fa fa-whatsapp"></span></a>
+		</div>
+	</div>
+</section>
+<!-- End banner Area -->
+
+<!-- Start features Area -->
+<section class="features-area section-gap-top" id="features">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="section-title text-center">
+					<h4>How We Protect Communities</h4>
+					<h2>Safety Features</h2>
+				</div>
+			</div>
+		</div>
+		<div class="row feature_inner">
+			<div class="col-lg-3 col-md-6">
+				<div class="feature-item">
+					<i class="fa fa-bullhorn"></i>
+					<h4>Real-Time Reporting</h4>
+					<p>Instantly report safety incidents, crimes, hazards, or police checkpoints with optional anonymity to protect your privacy</p>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6">
+				<div class="feature-item">
+					<i class="fa fa-location-arrow"></i>
+					<h4>Live Safety Map</h4>
+					<p>Interactive heat maps show safety conditions in your area with color-coded zones and real-time incident alerts</p>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6">
+				<div class="feature-item">
+					<i class="fa fa-phone"></i>
+					<h4>USSD Access</h4>
+					<p>No smartphone? Use *384*87# to report incidents and access safety information from any mobile phone</p>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6">
+				<div class="feature-item">
+					<i class="fa fa-bell"></i>
+					<h4>Community Alerts</h4>
+					<p>Receive instant notifications about safety concerns in your neighborhood via SMS, email, or push notifications</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End features Area -->
+
+<!-- Start Live Map Preview Area -->
+<section class="map-preview-area section-gap">
+	<div class="container">
+		<div class="row align-items-center justify-content-center">
+			<div class="col-lg-7 col-md-12 map-preview">
+				<div class="map-container">
+					<img class="img-fluid" src="{% static 'img/heatmap.png' %}" alt="Live Safety Map Preview" style="
+                    width: 100%;
+                    height: auto;
+                    max-height: 50rem;
+                    object-fit: cover;
+                    border-radius: 12px;
+                    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);">
+					<div class="map-overlay"></div>
+				</div>
+			</div>
+			<div class="col-lg-5 col-md-12 map-content">
+				<div class="section-title text-left">
+					<h4>Live Safety Intelligence</h4>
+					<h2>Know Your Area's Safety Status</h2>
+				</div>
+				<div>
+					<p>
+						Our interactive safety map provides real-time information about incidents, hazards, and safety conditions in communities across Kenya. Make informed decisions about your safety with up-to-date community-driven data.
+					</p>
+					<ul class="feature-list">
+						<li><span class="fa fa-check"></span> Safety heat zones</li>
+						<li><span class="fa fa-check"></span> Emergency service locations</li>
+						<li><span class="fa fa-check"></span> Police checkpoint alerts</li>
+						<li><span class="fa fa-check"></span> Historical safety trends</li>
+					</ul>
+				</div>
+				<a href="{% url 'incidents' %}" class="primary-btn mt-4">Explore Safety Map</a>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End Live Map Preview Area -->
+
+<!-- Start Statistics Area -->
+<section class="statistics-area section-gap-top">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3 col-md-6">
+				<div class="stat-item text-center">
+					<h2 class="counter">15,847</h2>
+					<p>Incidents Reported</p>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6">
+				<div class="stat-item text-center">
+					<h2 class="counter">42,693</h2>
+					<p>Registered Users</p>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6">
+				<div class="stat-item text-center">
+					<h2 class="counter">184</h2>
+					<p>Neighborhoods Covered</p>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6">
+				<div class="stat-item text-center">
+					<h2 class="counter">94%</h2>
+					<p>User Satisfaction</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End Statistics Area -->
+
+<!-- Start Emergency Services Area -->
+<section class="services-area section-gap" id="services">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="section-title text-center">
+					<h4>Quick Access</h4>
+					<h2>Emergency Services Directory</h2>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-4 col-md-6">
+				<div class="service-item police">
+					<div class="service-icon">
+						<i class="fa fa-shield"></i>
+					</div>
+					<h4>Police Stations</h4>
+					<p>Find nearest police stations with contact information and service ratings</p>
+					<a href="emergency-services.html#police" class="service-link">Find Police <span class="fa fa-arrow-right"></span></a>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6">
+				<div class="service-item hospital">
+					<div class="service-icon">
+						<i class="fa fa-hospital-o"></i>
+					</div>
+					<h4>Hospitals & Clinics</h4>
+					<p>Locate emergency medical services, hospitals, and 24/7 clinics near you</p>
+					<a href="emergency-services.html#hospitals" class="service-link">Find Hospitals <span class="fa fa-arrow-right"></span></a>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6">
+				<div class="service-item fire">
+					<div class="service-icon">
+						<i class="fa fa-fire-extinguisher"></i>
+					</div>
+					<h4>Fire & Rescue</h4>
+					<p>Emergency fire services and rescue operations contact information</p>
+					<a href="emergency-services.html#fire" class="service-link">Find Fire Services <span class="fa fa-arrow-right"></span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End Emergency Services Area -->
+
+<!-- Start Incident Types Area -->
+<section class="incident-types-area section-gap-top" id="incidents">
+	<div class="container">
+		<div class="row d-flex justify-content-center">
+			<div class="col-lg-8">
+				<div class="section-title text-center">
+					<h4>Report An Incident</h4>
+					<h2>What Would You Like To Report?</h2>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-3 col-md-6">
+				<div class="incident-type crime">
+					<div class="incident-icon">
+						<i class="fa fa-exclamation-triangle"></i>
+					</div>
+					<h4>Criminal Activity</h4>
+					<p>Theft, assault, burglary, vandalism, or suspicious activities</p>
+					<a href="report.html?type=crime" class="report-btn">Report Crime</a>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6">
+				<div class="incident-type accident">
+					<div class="incident-icon">
+						<i class="fa fa-car"></i>
+					</div>
+					<h4>Road Accident</h4>
+					<p>Vehicle collisions, hazardous road conditions, or traffic incidents</p>
+					<a href="report.html?type=accident" class="report-btn">Report Accident</a>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6">
+				<div class="incident-type hazard">
+					<div class="incident-icon">
+						<i class="fa fa-warning"></i>
+					</div>
+					<h4>Public Hazard</h4>
+					<p>Unsafe structures, fallen trees, flooding, or environmental dangers</p>
+					<a href="report.html?type=hazard" class="report-btn">Report Hazard</a>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6">
+				<div class="incident-type police">
+					<div class="incident-icon">
+						<i class="fa fa-shield"></i>
+					</div>
+					<h4>Police Checkpoint</h4>
+					<p>Report police presence, both routine checkpoints and incidents</p>
+					<a href="report.html?type=checkpoint" class="report-btn">Report Checkpoint</a>
+				</div>
+			</div>
+		</div>
+		<div class="row mt-5">
+			<div class="col-lg-12 text-center">
+				<div class="anonymous-note">
+					<p><i class="fa fa-user-secret"></i> <strong>All reports can be made anonymously</strong> - Your privacy and safety are our priority</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End Incident Types Area -->
+
+<!-- Start testimonial Area -->
+<section class="testimonial-area relative section-gap" id="testimonial">
+	<div class="container">
+		<div class="row d-flex justify-content-center">
+			<div class="col-lg-12">
+				<div class="section-title text-center">
+					<h4>Community Voices</h4>
+					<h2>What Kenyans Are Saying</h2>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="active-testimonial">
+				<div class="single-testimonial item d-flex flex-row">
+					<div class="thumb">
+						<img class="" src="img/testimonial/user1.jpg" alt="Sarah from Nairobi">
+					</div>
+					<div class="desc">
+						<p>
+							"Usalama Watch helped our estate in Nairobi organize a neighborhood watch. We've seen a 60% reduction in break-ins since we started using the platform together."
+						</p>
+						<h4>Sarah Mwangi</h4>
+						<div class="bottom">
+							<p>Nairobi Resident</p>
+						</div>
+					</div>
+				</div>
+				<div class="single-testimonial item d-flex flex-row">
+					<div class="thumb">
+						<img class="" src="img/testimonial/user2.jpg" alt="John from Mombasa">
+					</div>
+					<div class="desc">
+						<p>
+							"As a boda boda rider in Mombasa, the real-time road accident and police checkpoint reports have been invaluable for my daily routes and safety."
+						</p>
+						<h4>John Ochieng</h4>
+						<div class="bottom">
+							<p>Boda Boda Operator</p>
+						</div>
+					</div>
+				</div>
+				<div class="single-testimonial item d-flex flex-row">
+					<div class="thumb">
+						<img class="" src="img/testimonial/user3.jpg" alt="Amina from Kisumu">
+					</div>
+					<div class="desc">
+						<p>
+							"The anonymous reporting feature gave me confidence to report a security concern in our Kisumu neighborhood without fear of retaliation. The response was swift."
+						</p>
+						<h4>Amina Hassan</h4>
+						<div class="bottom">
+							<p>Community Leader</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End testimonial Area -->
+
+<!-- Start Safety Tips Area -->
+<section class="safety-tips-area section-gap">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="section-title text-center">
+					<h4>Stay Safe</h4>
+					<h2>Important Safety Tips</h2>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-4 col-md-6">
+				<div class="safety-tip">
+					<div class="tip-number">01</div>
+					<h4>Emergency Numbers</h4>
+					<p>Save these numbers: 999 (Police), 112 (Emergency), 911 (Alternative). Program them into your phone for quick access.</p>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6">
+				<div class="safety-tip">
+					<div class="tip-number">02</div>
+					<h4>Travel Safety</h4>
+					<p>Check the safety map before traveling to new areas. Share your route with trusted contacts when traveling at night.</p>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6">
+				<div class="safety-tip">
+					<div class="tip-number">03</div>
+					<h4>Neighborhood Watch</h4>
+					<p>Join or start a neighborhood watch group. Collective vigilance dramatically improves community safety.</p>
+				</div>
+			</div>
+		</div>
+		<div class="row mt-4">
+			<div class="col-lg-12 text-center">
+				<a href="safety-tips.html" class="primary-btn">View All Safety Tips</a>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End Safety Tips Area -->
+
+<!-- Start USSD Area -->
+<section class="ussd-area section-gap relative">
+	<div class="overlay overlay-bg"></div>
+	<div class="container">
+		<div class="row align-items-center">
+			<div class="col-lg-6">
+				<div class="ussd-content">
+					<h2>No Smartphone? No Problem!</h2>
+					<p>Access Usalama Watch safety features from any mobile phone using our USSD service. Report incidents, check area safety, and find emergency contacts without internet.</p>
+					<div class="ussd-code">
+						<h3>Dial: *384*87#</h3>
+						<p>Free service available on all networks</p>
+					</div>
+					<ul class="ussd-features">
+						<li><span class="fa fa-check"></span> Report incidents anonymously</li>
+						<li><span class="fa fa-check"></span> Check safety status of any area</li>
+						<li><span class="fa fa-check"></span> Find nearest emergency services</li>
+						<li><span class="fa fa-check"></span> Receive safety alerts via SMS</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<div class="ussd-phone">
+					<img src="{% static 'img/ussd.jpg' %}" alt="USSD Service on Mobile Phone" class="img-fluid" style="
+                    width: 100%;
+                    height: auto;
+                    max-height: 50rem;
+                    object-fit: cover;
+                    border-radius: 12px;
+                    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);">
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End USSD Area -->
+
+
+{% endblock %}

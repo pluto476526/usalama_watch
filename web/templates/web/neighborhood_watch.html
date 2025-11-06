@@ -1,0 +1,378 @@
+{% extends 'web/main.html' %}
+{% load static %}
+
+
+{% block main %}
+
+
+<!-- Start top-section Area -->
+<section class="banner-area relative" style="background-image: linear-gradient(rgba(0, 0, 30, 0.55), rgba(0, 0, 60, 0.55)), url({% static 'img/neighborhood_watch.jpg' %});
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;">
+    <div class="overlay overlay-bg"></div>
+    <div class="container">
+        <div class="row justify-content-between align-items-center text-center banner-content">
+            <div class="col-lg-12">
+                <h1>Neighborhood Watch</h1>
+                <p>Building Safer Communities Together Across Kenya</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End top-section Area -->
+
+<!-- Start Introduction Area -->
+<section class="about-area section-gap">
+    <div class="container">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-lg-6 col-md-12 about-left">
+                <img class="img-fluid" src="{% static 'img/community_watch.jpg' %}" alt="Community Watch Group" style="
+                    width: 100%;
+                    height: auto;
+                    max-height: 50rem;
+                    object-fit: cover;
+                    border-radius: 12px;
+                    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);">
+            </div>
+            <div class="col-lg-6 col-md-12 about-right">
+                <div class="section-title text-left">
+                    <h4>Community Power</h4>
+                    <h2>What is Neighborhood Watch?</h2>
+                </div>
+                <div>
+                    <p>
+                        Neighborhood Watch is a community-based program where residents work together with law enforcement 
+                        to prevent crime and build safer neighborhoods. It's about neighbors looking out for each other 
+                        and creating a united front against criminal activities.
+                    </p>
+                    <p>
+                        Through Usalama Watch, we make it easy to organize, coordinate, and manage watch groups 
+                        across Kenya using modern technology while maintaining the core principles of community vigilance.
+                    </p>
+                </div>
+                <div class="stats-grid mt-4">
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="stat-item text-center">
+                                <h3 class="counter">1,247</h3>
+                                <p>Active Groups</p>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="stat-item text-center">
+                                <h3 class="counter">42,893</h3>
+                                <p>Members</p>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="stat-item text-center">
+                                <h3 class="counter">68%</h3>
+                                <p>Crime Reduction</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Introduction Area -->
+
+<!-- Start Benefits Area -->
+<section class="features-area section-gap-top bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title text-center">
+                    <h4>Why Join?</h4>
+                    <h2>Benefits of Neighborhood Watch</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row feature_inner">
+            <div class="col-lg-4 col-md-6">
+                <div class="feature-item">
+                    <i class="fi flaticon-shield"></i>
+                    <h4>Enhanced Security</h4>
+                    <p>Multiple eyes watching out for suspicious activities significantly reduces crime rates in your area</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="feature-item">
+                    <i class="fi flaticon-community"></i>
+                    <h4>Stronger Community</h4>
+                    <p>Build meaningful relationships with your neighbors and create a tight-knit, supportive community</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="feature-item">
+                    <i class="fi flaticon-police"></i>
+                    <h4>Police Partnership</h4>
+                    <p>Work directly with local police who provide training, support, and quick response to watch group reports</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="feature-item">
+                    <i class="fi flaticon-alert"></i>
+                    <h4>Rapid Alerts</h4>
+                    <p>Receive instant notifications about safety concerns and incidents happening in your immediate area</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="feature-item">
+                    <i class="fi flaticon-education"></i>
+                    <h4>Safety Education</h4>
+                    <p>Access training on crime prevention, emergency response, and safety best practices for your family</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="feature-item">
+                    <i class="fi flaticon-value"></i>
+                    <h4>Property Value</h4>
+                    <p>Safer neighborhoods typically see increased property values and better quality of life for residents</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Benefits Area -->
+
+<!-- Start How It Works Area -->
+<section class="project-area section-gap-top" id="start-watch">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-8">
+                <div class="section-title text-center">
+                    <h4>Get Started</h4>
+                    <h2>How to Start a Watch Group</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="step-card text-center">
+                    <div class="step-number">1</div>
+                    <div class="step-icon">
+                        <i class="fa fa-users"></i>
+                    </div>
+                    <h4>Gather Interest</h4>
+                    <p>Talk to your neighbors and gauge interest. You'll need at least 10-15 households to form an effective watch group.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="step-card text-center">
+                    <div class="step-number">2</div>
+                    <div class="step-icon">
+                        <i class="fa fa-handshake-o"></i>
+                    </div>
+                    <h4>Contact Police</h4>
+                    <p>Reach out to your local police station to register your group and schedule initial training sessions.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="step-card text-center">
+                    <div class="step-number">3</div>
+                    <div class="step-icon">
+                        <i class="fa fa-user-circle"></i>
+                    </div>
+                    <h4>Choose Leaders</h4>
+                    <p>Elect a coordinator and block captains who will serve as points of contact and organize activities.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="step-card text-center">
+                    <div class="step-number">4</div>
+                    <div class="step-icon">
+                        <i class="fa fa-map-marker"></i>
+                    </div>
+                    <h4>Define Area</h4>
+                    <p>Clearly define your watch area boundaries and create a map with member locations and contact information.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="step-card text-center">
+                    <div class="step-number">5</div>
+                    <div class="step-icon">
+                        <i class="fa fa-bell"></i>
+                    </div>
+                    <h4>Establish Communication</h4>
+                    <p>Set up communication channels - WhatsApp groups, phone trees, or use our Usalama Watch platform.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="step-card text-center">
+                    <div class="step-number">6</div>
+                    <div class="step-icon">
+                        <i class="fa fa-calendar"></i>
+                    </div>
+                    <h4>Schedule Meetings</h4>
+                    <p>Plan regular meetings to discuss concerns, share updates, and maintain group engagement and training.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-lg-12 text-center">
+                <a href="#" class="primary-btn">Download Starter Kit</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End How It Works Area -->
+
+<!-- Start Success Stories Area -->
+<section class="testimonial-area relative section-gap bg-light" id="testimonial">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-12">
+                <div class="section-title text-center">
+                    <h4>Success Stories</h4>
+                    <h2>Watch Groups Making a Difference</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="active-testimonial">
+                <div class="single-testimonial item d-flex flex-row">
+                    <div class="thumb">
+                        <img class="" src="img/testimonial/watch-leader1.jpg" alt="Kamau from Kibera">
+                    </div>
+                    <div class="desc">
+                        <p>
+                            "Our watch group in Kibera has reduced break-ins by over 70% in just six months. We now have 
+                            nightly patrols and an alert system that works. The community has never felt safer."
+                        </p>
+                        <h4>James Kamau</h4>
+                        <div class="bottom">
+                            <p>Kibera Neighborhood Watch Coordinator</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-testimonial item d-flex flex-row">
+                    <div class="thumb">
+                        <img class="" src="img/testimonial/watch-leader2.jpg" alt="Nyong'o from Kisumu">
+                    </div>
+                    <div class="desc">
+                        <p>
+                            "Starting a watch group in our Kisumu estate was the best decision we made. Not only did crime drop, 
+                            but we've become closer as neighbors. We now organize community events and look out for each other."
+                        </p>
+                        <h4>Grace Nyong'o</h4>
+                        <div class="bottom">
+                            <p>Kisumu Watch Group Founder</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-testimonial item d-flex flex-row">
+                    <div class="thumb">
+                        <img class="" src="img/testimonial/watch-leader3.jpg" alt="Officer Mwangi">
+                    </div>
+                    <div class="desc">
+                        <p>
+                            "As a police officer, I've seen firsthand how effective watch groups are. They're our eyes and ears 
+                            in the community. The partnership between police and watch groups in Nairobi has led to numerous arrests."
+                        </p>
+                        <h4>Officer David Mwangi</h4>
+                        <div class="bottom">
+                            <p>Nairobi Police Spokesperson</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Success Stories Area -->
+
+<!-- Start Join Area -->
+<section class="callto-area section-gap relative" id="join-watch">
+    <div class="overlay overlay-bg"></div>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8">
+                <div class="callto-content">
+                    <h2>Ready to Make Your Neighborhood Safer?</h2>
+                    <p>Join an existing watch group or start a new one in your area. Together we can build stronger, safer communities across Kenya.</p>
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <div class="join-option text-center">
+                                <i class="fa fa-search"></i>
+                                <h4>Find Existing Groups</h4>
+                                <p>Search for active watch groups in your neighborhood</p>
+                                <a href="#" class="primary-btn">Search Groups</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="join-option text-center">
+                                <i class="fa fa-plus-circle"></i>
+                                <h4>Start New Group</h4>
+                                <p>Register a new watch group for your area</p>
+                                <a href="#" class="secondary-btn">Register Group</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="quick-links">
+                    <h4>Quick Resources</h4>
+                    <ul>
+                        <li><a href="#"><i class="fa fa-file-pdf-o"></i> Watch Group Handbook</a></li>
+                        <li><a href="#"><i class="fa fa-video-camera"></i> Training Videos</a></li>
+                        <li><a href="#"><i class="fa fa-phone"></i> Police Contacts</a></li>
+                        <li><a href="#"><i class="fa fa-warning"></i> Emergency Procedures</a></li>
+                        <li><a href="#"><i class="fa fa-calendar"></i> Event Templates</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Join Area -->
+
+<!-- Start FAQ Area -->
+<section class="faq-area section-gap">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title text-center">
+                    <h4>Questions</h4>
+                    <h2>Frequently Asked Questions</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="faq-item">
+                    <h4>Do I need any special training to join?</h4>
+                    <p>No special training is required to join. Basic orientation and ongoing training are provided by local police and experienced watch coordinators.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>How much time do I need to commit?</h4>
+                    <p>Time commitment varies by group. Most members spend 2-4 hours per month attending meetings and participating in watch activities.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Are watch groups legal in Kenya?</h4>
+                    <p>Yes, Neighborhood Watch groups are legal and encouraged by the Kenya Police Service. They operate as community policing initiatives.</p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="faq-item">
+                    <h4>What shouldn't watch groups do?</h4>
+                    <p>Watch groups should never confront suspects, carry weapons, or take law enforcement actions. Their role is to observe and report to police.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Can renters join watch groups?</h4>
+                    <p>Absolutely! Both homeowners and renters are encouraged to participate. Community safety benefits everyone regardless of ownership status.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>How do we communicate effectively?</h4>
+                    <p>Most groups use WhatsApp, phone trees, or our Usalama Watch platform for quick alerts and coordination.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End FAQ Area -->
+
+{% endblock %}

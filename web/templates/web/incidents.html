@@ -1,0 +1,369 @@
+{% extends 'web/main.html' %}
+{% load static %}
+
+
+{% block main %}
+
+
+
+<!-- Start top-section Area -->
+<section class="banner-area relative" style="background-image: linear-gradient(rgba(0, 0, 30, 0.55), rgba(0, 0, 60, 0.55)), url({% static 'img/incidents.jpg' %});
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;">
+    <div class="overlay overlay-bg"></div>
+    <div class="container">
+        <div class="row justify-content-between align-items-center text-center banner-content">
+            <div class="col-lg-12">
+                <h1>Live Safety Map</h1>
+                <p>Real-time incident reports and safety alerts across Kenya</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End top-section Area -->
+
+<!-- Start Map Controls Area -->
+<section class="map-controls-area section-gap-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="map-controls-header">
+                    <div class="live-status">
+                        <span class="status-indicator"></span>
+                        <span class="status-text">LIVE UPDATES ACTIVE</span>
+                        <span class="last-updated">Last updated: <span id="update-time">Just now</span></span>
+                    </div>
+                    <div class="control-actions">
+                        <a href="report.html" class="primary-btn">
+                            <i class="fa fa-plus"></i> Report Incident
+                        </a>
+                        <button class="secondary-btn" id="refresh-map">
+                            <i class="fa fa-refresh"></i> Refresh Map
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="filter-section">
+                    <h4>Filter Incidents</h4>
+                    
+                    <div class="filter-group">
+                        <h5>Incident Type</h5>
+                        <div class="filter-options">
+                            <label class="filter-checkbox">
+                                <input type="checkbox" checked data-type="crime">
+                                <span class="checkmark"></span>
+                                Criminal Activity
+                            </label>
+                            <label class="filter-checkbox">
+                                <input type="checkbox" checked data-type="accident">
+                                <span class="checkmark"></span>
+                                Road Accidents
+                            </label>
+                            <label class="filter-checkbox">
+                                <input type="checkbox" checked data-type="hazard">
+                                <span class="checkmark"></span>
+                                Public Hazards
+                            </label>
+                            <label class="filter-checkbox">
+                                <input type="checkbox" checked data-type="checkpoint">
+                                <span class="checkmark"></span>
+                                Police Checkpoints
+                            </label>
+                            <label class="filter-checkbox">
+                                <input type="checkbox" checked data-type="other">
+                                <span class="checkmark"></span>
+                                Other Incidents
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <h5>Severity Level</h5>
+                        <div class="filter-options">
+                            <label class="filter-checkbox">
+                                <input type="checkbox" checked data-severity="critical">
+                                <span class="checkmark critical"></span>
+                                Critical
+                            </label>
+                            <label class="filter-checkbox">
+                                <input type="checkbox" checked data-severity="high">
+                                <span class="checkmark high"></span>
+                                High
+                            </label>
+                            <label class="filter-checkbox">
+                                <input type="checkbox" checked data-severity="medium">
+                                <span class="checkmark medium"></span>
+                                Medium
+                            </label>
+                            <label class="filter-checkbox">
+                                <input type="checkbox" checked data-severity="low">
+                                <span class="checkmark low"></span>
+                                Low
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <h5>Time Range</h5>
+                        <select class="form-control nice-select" id="time-filter">
+                            <option value="1">Last 1 hour</option>
+                            <option value="6" selected>Last 6 hours</option>
+                            <option value="24">Last 24 hours</option>
+                            <option value="168">Last week</option>
+                            <option value="720">Last month</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <h5>Location</h5>
+                        <div class="location-search">
+                            <input type="text" class="form-control" placeholder="Search area or county..." id="location-search">
+                            <button class="search-btn" id="location-search-btn">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </div>
+                        <div class="county-filters">
+                            <label class="filter-checkbox">
+                                <input type="checkbox" data-county="nairobi">
+                                <span class="checkmark"></span>
+                                Nairobi
+                            </label>
+                            <label class="filter-checkbox">
+                                <input type="checkbox" data-county="mombasa">
+                                <span class="checkmark"></span>
+                                Mombasa
+                            </label>
+                            <label class="filter-checkbox">
+                                <input type="checkbox" data-county="kisumu">
+                                <span class="checkmark"></span>
+                                Kisumu
+                            </label>
+                            <label class="filter-checkbox">
+                                <input type="checkbox" data-county="nakuru">
+                                <span class="checkmark"></span>
+                                Nakuru
+                            </label>
+                            <button class="text-link" id="more-counties">More counties...</button>
+                        </div>
+                    </div>
+
+                    <div class="filter-actions">
+                        <button class="secondary-btn" id="reset-filters">Reset Filters</button>
+                        <button class="primary-btn" id="apply-filters">Apply Filters</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-9">
+                <div class="map-container">
+                    <div id="incident-map">
+                        <!-- Map will be loaded here by JavaScript -->
+                    </div>
+                    
+                    <div class="map-overlay-controls">
+                        <div class="map-legend">
+                            <h5>Safety Legend</h5>
+                            <div class="legend-item">
+                                <span class="legend-color critical"></span>
+                                <span>Critical Incident</span>
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-color high"></span>
+                                <span>High Severity</span>
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-color medium"></span>
+                                <span>Medium Severity</span>
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-color low"></span>
+                                <span>Low Severity</span>
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-color verified"></span>
+                                <span>Verified Report</span>
+                            </div>
+                        </div>
+
+                        <div class="map-tools">
+                            <button class="map-tool-btn" id="current-location" title="Find My Location">
+                                <i class="fa fa-location-arrow"></i>
+                            </button>
+                            <button class="map-tool-btn" id="zoom-in" title="Zoom In">
+                                <i class="fa fa-plus"></i>
+                            </button>
+                            <button class="map-tool-btn" id="zoom-out" title="Zoom Out">
+                                <i class="fa fa-minus"></i>
+                            </button>
+                            <button class="map-tool-btn" id="fullscreen" title="Fullscreen">
+                                <i class="fa fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="incident-list-section">
+                    <div class="section-header">
+                        <h4>Recent Incidents</h4>
+                        <div class="view-options">
+                            <button class="view-option active" data-view="list">List View</button>
+                            <button class="view-option" data-view="grid">Grid View</button>
+                        </div>
+                    </div>
+                    
+                    <div class="incident-list" id="incident-list">
+                        <!-- Incident items will be populated by JavaScript -->
+                        <div class="incident-item critical">
+                            <div class="incident-icon">
+                                <i class="fa fa-exclamation-triangle"></i>
+                            </div>
+                            <div class="incident-details">
+                                <h5>Armed Robbery Reported</h5>
+                                <p class="incident-location">Westlands, Nairobi</p>
+                                <p class="incident-time">15 minutes ago</p>
+                                <span class="verified-badge">Verified</span>
+                            </div>
+                            <div class="incident-severity">
+                                <span class="severity-label critical">Critical</span>
+                            </div>
+                        </div>
+
+                        <div class="incident-item high">
+                            <div class="incident-icon">
+                                <i class="fa fa-car"></i>
+                            </div>
+                            <div class="incident-details">
+                                <h5>Major Road Accident</h5>
+                                <p class="incident-location">Mombasa Road near Athi River</p>
+                                <p class="incident-time">45 minutes ago</p>
+                                <span class="verified-badge">Verified</span>
+                            </div>
+                            <div class="incident-severity">
+                                <span class="severity-label high">High</span>
+                            </div>
+                        </div>
+
+                        <div class="incident-item medium">
+                            <div class="incident-icon">
+                                <i class="fa fa-warning"></i>
+                            </div>
+                            <div class="incident-details">
+                                <h5>Fallen Tree Blocking Road</h5>
+                                <p class="incident-location">Kileleshwa, Nairobi</p>
+                                <p class="incident-time">1 hour ago</p>
+                            </div>
+                            <div class="incident-severity">
+                                <span class="severity-label medium">Medium</span>
+                            </div>
+                        </div>
+
+                        <div class="incident-item low">
+                            <div class="incident-icon">
+                                <i class="fa fa-shield"></i>
+                            </div>
+                            <div class="incident-details">
+                                <h5>Police Checkpoint</h5>
+                                <p class="incident-location">Thika Road, Ruiru</p>
+                                <p class="incident-time">2 hours ago</p>
+                            </div>
+                            <div class="incident-severity">
+                                <span class="severity-label low">Low</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="load-more-section">
+                        <button class="secondary-btn" id="load-more-incidents">
+                            <i class="fa fa-refresh"></i> Load More Incidents
+                        </button>
+                        <div class="incident-count">
+                            Showing <span id="shown-count">4</span> of <span id="total-count">247</span> incidents
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Map Controls Area -->
+
+<!-- Start Safety Tips Area -->
+<section class="safety-tips-area section-gap">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title text-center">
+                    <h4>Safety First</h4>
+                    <h2>Important Reminders</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="safety-tip">
+                    <div class="tip-icon">
+                        <i class="fa fa-phone"></i>
+                    </div>
+                    <h4>Emergency Contacts</h4>
+                    <p>Save these numbers: 999 (Police), 112 (Emergency), 911 (Alternative). Program them into your phone for quick access.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="safety-tip">
+                    <div class="tip-icon">
+                        <i class="fa fa-map-marker"></i>
+                    </div>
+                    <h4>Check Before You Go</h4>
+                    <p>Always check the safety map before traveling to unfamiliar areas. Plan your route and share it with trusted contacts.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="safety-tip">
+                    <div class="tip-icon">
+                        <i class="fa fa-users"></i>
+                    </div>
+                    <h4>Community Watch</h4>
+                    <p>Join your local neighborhood watch group. Collective vigilance dramatically improves community safety for everyone.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Safety Tips Area -->
+
+<!-- Start USSD Area -->
+<section class="ussd-area section-gap relative">
+    <div class="overlay overlay-bg"></div>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="ussd-content">
+                    <h2>No Internet? Use USSD</h2>
+                    <p>Access Usalama Watch safety features from any mobile phone using our USSD service. Report incidents and check area safety without internet connection.</p>
+                    <div class="ussd-code">
+                        <h3>Dial: *384*87#</h3>
+                        <p>Free service available on all networks</p>
+                    </div>
+                    <ul class="ussd-features">
+                        <li><span class="fa fa-check"></span> Report incidents anonymously</li>
+                        <li><span class="fa fa-check"></span> Check safety status of any area</li>
+                        <li><span class="fa fa-check"></span> Find nearest emergency services</li>
+                        <li><span class="fa fa-check"></span> Receive safety alerts via SMS</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="ussd-phone text-center">
+                    <img src="img/ussd-phone-map.png" alt="USSD Service for Safety Map" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End USSD Area -->
+
+{% endblock %}

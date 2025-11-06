@@ -1,0 +1,540 @@
+{% extends 'web/main.html' %}
+{% load static %}
+
+
+{% block main %}
+
+
+<!-- Start top-section Area -->
+<section class="banner-area relative" style="background-image: linear-gradient(rgba(0, 0, 30, 0.55), rgba(0, 0, 60, 0.55)), url({% static 'img/about_us.jpg' %});
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;">
+    <div class="overlay overlay-bg"></div>
+    <div class="container">
+        <div class="row justify-content-between align-items-center text-center banner-content">
+            <div class="col-lg-12">
+                <h1>About Us</h1>
+                <p>Building Safer Communities Across Kenya Through Technology and Collaboration</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End top-section Area -->
+
+
+<!-- Start Our Story Area -->
+<section class="about-area section-gap">
+    <div class="container">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-lg-6 col-md-12 about-left">
+                <img class="img-fluid" src="{% static 'img/our_story.jpg' %}" alt="Our Story - Usalama Watch" style="
+                    width: 100%;
+                    height: auto;
+                    max-height: 50rem;
+                    object-fit: cover;
+                    border-radius: 12px;
+                    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);">
+            </div>
+            <div class="col-lg-6 col-md-12 about-right">
+                <div class="section-title text-left">
+                    <h4>Our Journey</h4>
+                    <h2>How Usalama Watch Began</h2>
+                </div>
+                <div>
+                    <p>
+                        Usalama Watch was born in 2021 from a simple yet powerful observation: while technology was 
+                        advancing rapidly in Kenya, community safety systems remained largely fragmented and inaccessible 
+                        to ordinary citizens. Our founders witnessed firsthand how lack of timely safety information 
+                        affected vulnerable communities.
+                    </p>
+                    <p>
+                        After a series of community meetings across Nairobi, Mombasa, and Kisumu, we identified the 
+                        critical need for a unified platform that could bridge the gap between citizens, community 
+                        watch groups, and emergency services. What started as a small pilot project in three Nairobi 
+                        estates has now grown into a nationwide movement.
+                    </p>
+                    <p>
+                        Today, Usalama Watch stands as Kenya's leading community safety platform, empowering citizens 
+                        with real-time safety information and creating stronger, more connected communities.
+                    </p>
+                </div>
+                <div class="milestone-highlights">
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="milestone-item text-center">
+                                <h3>2021</h3>
+                                <p>Founded</p>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="milestone-item text-center">
+                                <h3>500+</h3>
+                                <p>Watch Groups</p>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="milestone-item text-center">
+                                <h3>47</h3>
+                                <p>Counties Reached</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Our Story Area -->
+
+<!-- Start Mission Vision Area -->
+<section class="features-area section-gap-top bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="mission-vision-card mission">
+                    <div class="card-icon">
+                        <i class="fi flaticon-target"></i>
+                    </div>
+                    <h3>Our Mission</h3>
+                    <p>
+                        To empower every Kenyan with accessible safety information and tools that enable 
+                        communities to prevent crime, respond to emergencies, and build safer neighborhoods 
+                        through technology and collective action.
+                    </p>
+                    <div class="mission-points">
+                        <div class="point-item">
+                            <i class="fa fa-check"></i>
+                            <span>Make safety information accessible to all</span>
+                        </div>
+                        <div class="point-item">
+                            <i class="fa fa-check"></i>
+                            <span>Bridge communities and emergency services</span>
+                        </div>
+                        <div class="point-item">
+                            <i class="fa fa-check"></i>
+                            <span>Leverage technology for community good</span>
+                        </div>
+                        <div class="point-item">
+                            <i class="fa fa-check"></i>
+                            <span>Promote proactive crime prevention</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="mission-vision-card vision">
+                    <div class="card-icon">
+                        <i class="fi flaticon-eye"></i>
+                    </div>
+                    <h3>Our Vision</h3>
+                    <p>
+                        We envision a Kenya where every community is safe, connected, and empowered; 
+                        where technology serves as a bridge between citizens and their safety; and where 
+                        no Kenyan feels alone or vulnerable in their own neighborhood.
+                    </p>
+                    <div class="vision-goals">
+                        <h5>By 2025, We Aim To:</h5>
+                        <ul>
+                            <li>Reach 1 million Kenyans with safety information</li>
+                            <li>Establish watch groups in every urban estate</li>
+                            <li>Reduce response time for emergency services</li>
+                            <li>Create the largest community safety network in East Africa</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Mission Vision Area -->
+
+<!-- Start Our Values Area -->
+<section class="project-area section-gap-top">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-8">
+                <div class="section-title text-center">
+                    <h4>Our Foundation</h4>
+                    <h2>Core Values That Guide Us</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fa fa-users"></i>
+                    </div>
+                    <h4>Community First</h4>
+                    <p>We believe that sustainable safety solutions come from within communities. We listen, learn, and build together with the people we serve.</p>
+                    <div class="value-principles">
+                        <span class="principle-tag">Collaboration</span>
+                        <span class="principle-tag">Inclusion</span>
+                        <span class="principle-tag">Participation</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fa fa-shield"></i>
+                    </div>
+                    <h4>Trust & Transparency</h4>
+                    <p>We operate with complete transparency in our processes and data handling. Your trust is our most valuable asset.</p>
+                    <div class="value-principles">
+                        <span class="principle-tag">Accountability</span>
+                        <span class="principle-tag">Honesty</span>
+                        <span class="principle-tag">Openness</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fa fa-lightbulb-o"></i>
+                    </div>
+                    <h4>Innovation</h4>
+                    <p>We continuously seek new ways to leverage technology for community safety while ensuring accessibility for all Kenyans.</p>
+                    <div class="value-principles">
+                        <span class="principle-tag">Creativity</span>
+                        <span class="principle-tag">Adaptability</span>
+                        <span class="principle-tag">Accessibility</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fa fa-heart"></i>
+                    </div>
+                    <h4>Compassion</h4>
+                    <p>We approach every incident and every user with empathy and understanding, recognizing the human impact of safety concerns.</p>
+                    <div class="value-principles">
+                        <span class="principle-tag">Empathy</span>
+                        <span class="principle-tag">Care</span>
+                        <span class="principle-tag">Support</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fa fa-balance-scale"></i>
+                    </div>
+                    <h4>Integrity</h4>
+                    <p>We maintain the highest ethical standards in all our operations, from data privacy to community engagements.</p>
+                    <div class="value-principles">
+                        <span class="principle-tag">Ethics</span>
+                        <span class="principle-tag">Principles</span>
+                        <span class="principle-tag">Reliability</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fa fa-rocket"></i>
+                    </div>
+                    <h4>Impact-Driven</h4>
+                    <p>We measure our success by the tangible improvement in community safety and the positive impact on people's lives.</p>
+                    <div class="value-principles">
+                        <span class="principle-tag">Results</span>
+                        <span class="principle-tag">Effectiveness</span>
+                        <span class="principle-tag">Measurement</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Our Values Area -->
+
+<!-- Start Team Area -->
+<section class="testimonial-area relative section-gap bg-light" id="testimonial">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-12">
+                <div class="section-title text-center">
+                    <h4>Meet The Team</h4>
+                    <h2>Dedicated to Community Safety</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img class="img-fluid" src="img/team/team1.jpg" alt="David Mwangi - Founder">
+                    </div>
+                    <div class="member-info">
+                        <h4>David Mwangi</h4>
+                        <p class="position">Founder & CEO</p>
+                        <p class="bio">Former community organizer with 10+ years in social impact projects across East Africa.</p>
+                        <div class="member-social">
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img class="img-fluid" src="img/team/team2.jpg" alt="Sarah Okoth - CTO">
+                    </div>
+                    <div class="member-info">
+                        <h4>Sarah Okoth</h4>
+                        <p class="position">Chief Technology Officer</p>
+                        <p class="bio">Software engineer passionate about using technology to solve social challenges in Africa.</p>
+                        <div class="member-social">
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img class="img-fluid" src="img/team/team3.jpg" alt="James Ochieng - Community Manager">
+                    </div>
+                    <div class="member-info">
+                        <h4>James Ochieng</h4>
+                        <p class="position">Community Relations Manager</p>
+                        <p class="bio">Former police officer dedicated to bridging communities and law enforcement.</p>
+                        <div class="member-social">
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img class="img-fluid" src="img/team/team4.jpg" alt="Amina Hassan - Operations">
+                    </div>
+                    <div class="member-info">
+                        <h4>Amina Hassan</h4>
+                        <p class="position">Operations Director</p>
+                        <p class="bio">Project management expert with background in non-profit operations across Kenya.</p>
+                        <div class="member-social">
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-lg-12">
+                <div class="team-description text-center">
+                    <p>Our team combines expertise in technology, community organizing, law enforcement, and social impact. 
+                    We're united by our commitment to making Kenya safer for everyone.</p>
+                    <a href="contact.html" class="primary-btn">Join Our Team</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Team Area -->
+
+<!-- Start Impact Stories Area -->
+<section class="about-area section-gap">
+    <div class="container">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-lg-6 col-md-12 about-right">
+                <div class="section-title text-left">
+                    <h4>Real Impact</h4>
+                    <h2>Stories That Inspire Us</h2>
+                </div>
+                <div class="impact-stories">
+                    <div class="story-item">
+                        <div class="story-icon">
+                            <i class="fa fa-home"></i>
+                        </div>
+                        <div class="story-content">
+                            <h5>Kibera Community Transformation</h5>
+                            <p>After implementing Usalama Watch in Kibera, break-ins reduced by 65% in the first six months. 
+                            The community now has an active neighborhood watch with over 200 members.</p>
+                            <span class="story-location">Kibera, Nairobi</span>
+                        </div>
+                    </div>
+                    <div class="story-item">
+                        <div class="story-icon">
+                            <i class="fa fa-road"></i>
+                        </div>
+                        <div class="story-content">
+                            <h5>Mombasa Road Safety Success</h5>
+                            <p>Real-time accident reporting on Mombasa Road has reduced emergency response time from 
+                            25 minutes to under 8 minutes, saving numerous lives through quicker medical attention.</p>
+                            <span class="story-location">Mombasa Road</span>
+                        </div>
+                    </div>
+                    <div class="story-item">
+                        <div class="story-icon">
+                            <i class="fa fa-graduation-cap"></i>
+                        </div>
+                        <div class="story-content">
+                            <h5>Student Safety in Kisumu</h5>
+                            <p>University students in Kisumu used our platform to create safe walking routes and 
+                            reporting systems, resulting in a 80% decrease in incidents around campus areas.</p>
+                            <span class="story-location">Kisumu</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 about-left">
+                <img class="img-fluid" src="{% static 'img/impact_stories.jpg' %}" alt="Impact Stories" style="
+                    width: 100%;
+                    height: auto;
+                    max-height: 50rem;
+                    object-fit: cover;
+                    border-radius: 12px;
+                    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Impact Stories Area -->
+
+<!-- Start Partners Recognition Area -->
+<section class="callto-area section-gap relative">
+    <div class="overlay overlay-bg"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="callto-content">
+                    <h2>Recognition & Partnerships</h2>
+                    <p>Working together to build safer communities across Kenya</p>
+                    <div class="achievements">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="achievement-item">
+                                    <i class="fa fa-trophy"></i>
+                                    <div class="achievement-content">
+                                        <h5>2023 Social Innovation Award</h5>
+                                        <p>Kenya Tech Awards - Best Social Impact Platform</p>
+                                    </div>
+                                </div>
+                                <div class="achievement-item">
+                                    <i class="fa fa-handshake-o"></i>
+                                    <div class="achievement-content">
+                                        <h5>Police Partnership</h5>
+                                        <p>Official partner with Kenya Police Service</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="achievement-item">
+                                    <i class="fa fa-star"></i>
+                                    <div class="achievement-content">
+                                        <h5>UN Sustainable Goals</h5>
+                                        <p>Contributing to Peace, Justice & Strong Institutions</p>
+                                    </div>
+                                </div>
+                                <div class="achievement-item">
+                                    <i class="fa fa-users"></i>
+                                    <div class="achievement-content">
+                                        <h5>47 County Engagement</h5>
+                                        <p>Active in all 47 counties across Kenya</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="partners-box">
+                    <h4>Our Strategic Partners</h4>
+                    <div class="partner-logos">
+                        <div class="partner-logo">
+                            <img src="img/partners/police-service.png" alt="Kenya Police Service">
+                        </div>
+                        <div class="partner-logo">
+                            <img src="img/partners/county-gov.png" alt="County Governments">
+                        </div>
+                        <div class="partner-logo">
+                            <img src="img/partners/community-org.png" alt="Community Organizations">
+                        </div>
+                        <div class="partner-logo">
+                            <img src="img/partners/tech-partner.png" alt="Technology Partners">
+                        </div>
+                    </div>
+                    <div class="partner-cta">
+                        <p>Interested in partnering with us?</p>
+                        <a href="contact.html" class="primary-btn">Become a Partner</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Partners Recognition Area -->
+
+<!-- Start Future Plans Area -->
+<section class="ussd-area section-gap">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8">
+                <div class="ussd-content">
+                    <h2>Our Future Vision</h2>
+                    <p>We're constantly evolving to better serve Kenyan communities. Here's what's next for Usalama Watch:</p>
+                    <div class="future-plans">
+                        <div class="plan-item">
+                            <div class="plan-icon">
+                                <i class="fa fa-mobile"></i>
+                            </div>
+                            <div class="plan-content">
+                                <h5>Enhanced Mobile Experience</h5>
+                                <p>New app features including voice reporting, offline maps, and AI-powered safety predictions</p>
+                            </div>
+                        </div>
+                        <div class="plan-item">
+                            <div class="plan-icon">
+                                <i class="fa fa-expand"></i>
+                            </div>
+                            <div class="plan-content">
+                                <h5>National Expansion</h5>
+                                <p>Reaching rural communities with simplified USSD services and local language support</p>
+                            </div>
+                        </div>
+                        <div class="plan-item">
+                            <div class="plan-icon">
+                                <i class="fa fa-graduation-cap"></i>
+                            </div>
+                            <div class="plan-content">
+                                <h5>Safety Education</h5>
+                                <p>Comprehensive safety training programs for schools, businesses, and community groups</p>
+                            </div>
+                        </div>
+                        <div class="plan-item">
+                            <div class="plan-icon">
+                                <i class="fa fa-line-chart"></i>
+                            </div>
+                            <div class="plan-content">
+                                <h5>Data Insights</h5>
+                                <p>Advanced analytics to help policymakers and communities make data-driven safety decisions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="future-image text-center">
+                    <img src="img/future-vision.jpg" alt="Future Vision" class="img-fluid">
+                    <div class="future-stats">
+                        <div class="future-stat">
+                            <h3>1M+</h3>
+                            <p>Target Users by 2025</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Future Plans Area -->
+{% endblock %}

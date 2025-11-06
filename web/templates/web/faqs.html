@@ -1,0 +1,714 @@
+{% extends 'web/main.html' %}
+{% load static %}
+
+
+{% block main %}
+
+
+<!-- Start top-section Area -->
+<section class="banner-area relative" style="background-image: linear-gradient(rgba(0, 0, 30, 0.55), rgba(0, 0, 60, 0.55)), url({% static 'img/faqs.jpg' %});
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;">
+    <div class="overlay overlay-bg"></div>
+    <div class="container">
+        <div class="row justify-content-between align-items-center text-center banner-content">
+            <div class="col-lg-12">
+                <h1>Frequently Asked Questions</h1>
+                <p>Find Answers to Common Questions About Usalama Watch</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End top-section Area -->
+
+
+<!-- Start FAQ Navigation Area -->
+<section class="features-area section-gap-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="faq-categories">
+                    <div class="row">
+                        <div class="col-lg-2 col-md-4 col-6">
+                            <a href="#general" class="faq-category active">
+                                <div class="category-icon">
+                                    <i class="fa fa-question-circle"></i>
+                                </div>
+                                <span>General</span>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-6">
+                            <a href="#reporting" class="faq-category">
+                                <div class="category-icon">
+                                    <i class="fa fa-flag"></i>
+                                </div>
+                                <span>Reporting</span>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-6">
+                            <a href="#safety-map" class="faq-category">
+                                <div class="category-icon">
+                                    <i class="fa fa-map"></i>
+                                </div>
+                                <span>Safety Map</span>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-6">
+                            <a href="#privacy" class="faq-category">
+                                <div class="category-icon">
+                                    <i class="fa fa-shield"></i>
+                                </div>
+                                <span>Privacy</span>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-6">
+                            <a href="#neighborhood" class="faq-category">
+                                <div class="category-icon">
+                                    <i class="fa fa-users"></i>
+                                </div>
+                                <span>Neighborhood Watch</span>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-6">
+                            <a href="#technical" class="faq-category">
+                                <div class="category-icon">
+                                    <i class="fa fa-cog"></i>
+                                </div>
+                                <span>Technical</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End FAQ Navigation Area -->
+
+<!-- Start General FAQ Area -->
+<section class="about-area section-gap" id="general">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title text-center">
+                    <h4>Basic Information</h4>
+                    <h2>General Questions</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h5>What is Usalama Watch?</h5>
+                        <i class="fa fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Usalama Watch is a community-driven safety platform that empowers Kenyan citizens to report, track, and stay informed about safety incidents in their neighborhoods. We combine modern technology with community collaboration to create safer environments across Kenya.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h5>Is Usalama Watch free to use?</h5>
+                        <i class="fa fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, Usalama Watch is completely free for all community members. We believe safety information should be accessible to everyone, regardless of their economic situation. There are no hidden fees or subscription charges for our basic services.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h5>Who runs Usalama Watch?</h5>
+                        <i class="fa fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Usalama Watch is operated by a dedicated team of Kenyan professionals including software developers, community organizers, and safety experts. We work in partnership with the Kenya Police Service, county governments, and community organizations across the country.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h5>In which areas is Usalama Watch available?</h5>
+                        <i class="fa fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We are currently active in all 47 counties of Kenya, with particular focus on urban and peri-urban areas. Our services are available nationwide, and we're continuously expanding to reach more rural communities.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h5>How is Usalama Watch funded?</h5>
+                        <i class="fa fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We are funded through grants from development partners, corporate social responsibility programs from Kenyan businesses, and partnerships with county governments. We maintain our commitment to keeping the platform free for users.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h5>What languages does Usalama Watch support?</h5>
+                        <i class="fa fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Currently, our platform is available in English and Kiswahili. We're working on adding more local languages to make the platform more accessible to all Kenyans.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h5>How can I contact Usalama Watch?</h5>
+                        <i class="fa fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You can reach us through multiple channels: Email at support@usalamawatch.co.ke, phone at +254 700 123 456, or through our contact form on the website. We also have active social media channels on Twitter, Facebook, and WhatsApp.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h5>Is Usalama Watch affiliated with the government?</h5>
+                        <i class="fa fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>While we work closely with government agencies including the Kenya Police Service and various county governments, Usalama Watch is an independent community platform. We maintain partnerships but operate independently to serve community interests.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End General FAQ Area -->
+
+<!-- Start Reporting FAQ Area -->
+<section class="features-area section-gap-top bg-light" id="reporting">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title text-center">
+                    <h4>Incident Reporting</h4>
+                    <h2>Reporting Questions</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h5>What types of incidents should I report?</h5>
+                        <i class="fa fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You should report any safety-related incidents including: criminal activities (theft, assault, burglary), road accidents, public hazards (fallen trees, flooding), suspicious activities, police checkpoints, and any emergency situations that could affect community safety.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h5>How do I report an incident?</h5>
+                        <i class="fa fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You can report incidents through three main methods: 1) Via our website using the "Report Incident" button, 2) Through our mobile app, or 3) Using USSD code *384*87# from any mobile phone. All methods are free and available 24/7.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h5>Can I report incidents anonymously?</h5>
+                        <i class="fa fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, all reporting methods include an option for anonymous reporting. Your identity will be completely protected, and we won't store any personal information that could identify you when you choose to report anonymously.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h5>What information should I include when reporting?</h5>
+                        <i class="fa fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>For the most effective reporting, include: location (automatic or manual), incident type, severity level, description of what happened, time of occurrence, and any photos or videos (optional). The more accurate information you provide, the more helpful it is to the community.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h5>What happens after I report an incident?</h5>
+                        <i class="fa fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>After reporting: 1) The incident is verified through our system, 2) It appears on the live safety map, 3) Nearby community members receive alerts if they've subscribed, 4) In critical cases, we may share with relevant authorities while protecting your privacy.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h5>Can I report incidents that happened in the past?</h5>
+                        <i class="fa fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>While we focus on real-time reporting for immediate community awareness, you can report past incidents if they're relevant for community safety patterns. However, real-time reports are most valuable for preventing similar incidents.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h5>How quickly do reports appear on the map?</h5>
+                        <i class="fa fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Most reports appear on the safety map within 2-5 minutes of submission. Critical incidents may appear even faster as they're prioritized in our verification system.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h5>What should I do in an immediate emergency?</h5>
+                        <i class="fa fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>For immediate, life-threatening emergencies, always call the emergency services first: Police (999, 112, 911), Ambulance (120, 112), Fire (999, 112). Use Usalama Watch to report the incident afterward to alert your community.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Reporting FAQ Area -->
+
+<!-- Start Safety Map FAQ Area -->
+<section class="project-area section-gap-top" id="safety-map">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title text-center">
+                    <h4>Safety Information</h4>
+                    <h2>Safety Map Questions</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h5>How does the safety map work?</h5>
+                        <i class="fa fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>The safety map displays real-time incident reports from community members across Kenya. Incidents are color-coded by severity and type, allowing you to quickly assess safety conditions in any area. The map updates automatically as new reports come in.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h5>What do the different colors on the map mean?</h5>
+                        <i class="fa fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Red indicates critical incidents (immediate danger), Orange for high severity (significant risk), Yellow for medium severity (caution advised), and Green for low severity or resolved incidents. Different icons represent incident types like crime, accident, or hazard.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h5>How accurate is the safety map information?</h5>
+                        <i class="fa fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We use a verification system that cross-references reports and validates location data. While we strive for accuracy, the map reflects community reports and should be used as a guide rather than an absolute safety guarantee.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h5>Can I filter what I see on the safety map?</h5>
+                        <i class="fa fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, you can filter by incident type (crime, accident, hazard, etc.), severity level, time range (last hour, 6 hours, 24 hours, etc.), and specific locations or counties. This helps you focus on the information most relevant to you.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h5>How often is the safety map updated?</h5>
+                        <i class="fa fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>The map updates in real-time as new reports are submitted and verified. You'll see new incidents appearing within minutes of being reported by community members.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h5>Can I use the safety map without creating an account?</h5>
+                        <i class="fa fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, you can view the safety map and basic incident information without an account. However, creating an account gives you access to additional features like personalized alerts and the ability to save favorite locations.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h5>How do safety alerts work?</h5>
+                        <i class="fa fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>When you enable alerts, you'll receive notifications about incidents in areas you care about. You can customize alert types (only critical incidents, all incidents), methods (SMS, email, push notification), and frequency.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h5>Can I access the safety map on my mobile phone?</h5>
+                        <i class="fa fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, our website is fully mobile-responsive, and we also have dedicated mobile apps for iOS and Android. For basic phones, you can use our USSD service to check safety status in any area.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Safety Map FAQ Area -->
+
+<!-- Start Privacy FAQ Area -->
+<section class="testimonial-area relative section-gap bg-light" id="privacy">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title text-center">
+                    <h4>Data Protection</h4>
+                    <h2>Privacy & Security Questions</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h5>How is my personal information protected?</h5>
+                        <i class="fa fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We use industry-standard encryption to protect all data, comply with Kenya's Data Protection Act, and never share your personal information without explicit consent. Anonymous reporting options ensure your identity remains protected when needed.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h5>What information do you collect from users?</h5>
+                        <i class="fa fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We collect minimal necessary information: for account holders - email and phone number; for incident reporting - location and incident details. We never collect unnecessary personal data and anonymize information where possible.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h5>Do you share my data with third parties?</h5>
+                        <i class="fa fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We only share anonymized, aggregated data with trusted partners like the Kenya Police Service for community safety purposes. We never sell your personal data to advertisers or third-party marketers.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h5>Can I delete my account and data?</h5>
+                        <i class="fa fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, you can request account deletion at any time through your account settings or by contacting us. We will remove your personal information, though anonymous incident reports may be retained for community safety analysis.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h5>How do you prevent false reports or abuse?</h5>
+                        <i class="fa fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We have multiple verification measures: location validation, cross-referencing with other reports, trusted user systems, and manual review for suspicious activity. Users who repeatedly submit false reports may have their access restricted.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h5>Is my location tracked when using the app?</h5>
+                        <i class="fa fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We only access your location when you actively use location-based features or report an incident. We don't continuously track your location in the background without your permission.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h5>Who can see my incident reports?</h5>
+                        <i class="fa fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Incident details (without personal information) are visible to the Usalama Watch community. Your identity is never shared unless you choose to report as identified and even then, only with relevant authorities in critical situations.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h5>How long do you keep incident data?</h5>
+                        <i class="fa fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We retain incident data for community safety analysis and pattern recognition, but personal information is deleted according to our data retention policy (typically 1-2 years unless required for ongoing safety initiatives).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Privacy FAQ Area -->
+
+<!-- Start Neighborhood Watch FAQ Area -->
+<section class="about-area section-gap" id="neighborhood">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title text-center">
+                    <h4>Community Programs</h4>
+                    <h2>Neighborhood Watch Questions</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h5>What is a Neighborhood Watch group?</h5>
+                        <i class="fa fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>A Neighborhood Watch is a community-based group where residents work together to prevent crime and improve safety. Members watch out for each other, report suspicious activities, and collaborate with local authorities.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h5>How do I join an existing watch group?</h5>
+                        <i class="fa fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You can search for existing groups in your area through our Neighborhood Watch page. Contact the group coordinator directly or attend one of their meetings to learn more and join.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h5>How do I start a new watch group?</h5>
+                        <i class="fa fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Starting a group involves: 1) Gauging neighbor interest, 2) Contacting local police, 3) Electing leaders, 4) Defining your area, 5) Establishing communication channels. We provide a complete starter kit on our website.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h5>What support does Usalama Watch provide to watch groups?</h5>
+                        <i class="fa fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We provide communication tools, training resources, coordination with police, safety alerts, and a platform for sharing information between groups. We also help with official registration and ongoing support.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h5>Are watch groups legal in Kenya?</h5>
+                        <i class="fa fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, Neighborhood Watch groups are legal and encouraged by the Kenya Police Service as part of community policing initiatives. They operate within the law by observing and reporting, not taking law enforcement action.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h5>What training do watch group members receive?</h5>
+                        <i class="fa fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Members receive training on: observation skills, accurate reporting, safety procedures, emergency response basics, legal boundaries, and effective communication with police. Training is provided by police and experienced coordinators.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h5>How much time commitment is required?</h5>
+                        <i class="fa fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Time commitment varies but typically involves 2-4 hours per month for meetings and watch activities. The level of involvement is flexible based on your availability.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h5>Can renters join neighborhood watch groups?</h5>
+                        <i class="fa fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! Both homeowners and renters are encouraged to participate. Community safety benefits everyone regardless of ownership status, and diverse participation strengthens the watch group.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Neighborhood Watch FAQ Area -->
+
+<!-- Start Technical FAQ Area -->
+<section class="callto-area section-gap relative" id="technical">
+    <div class="overlay overlay-bg"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title text-center">
+                    <h4>Technical Support</h4>
+                    <h2>Technical Questions</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h5>Do I need a smartphone to use Usalama Watch?</h5>
+                        <i class="fa fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>No, you can access essential features through our USSD service (*384*87#) from any mobile phone. However, a smartphone gives you access to the full features including the interactive safety map and mobile app.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h5>How does the USSD service work?</h5>
+                        <i class="fa fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Dial *384*87# from any mobile phone (no internet needed). You'll see a menu to report incidents, check area safety, find emergency contacts, or subscribe to SMS alerts. The service is free on all networks.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h5>What are the system requirements for the mobile app?</h5>
+                        <i class="fa fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>For Android: Version 6.0 or higher. For iOS: Version 12.0 or higher. The app requires about 50MB of storage space and works best with an internet connection, though some features work offline.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h5>What should I do if the app isn't working properly?</h5>
+                        <i class="fa fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Try these steps: 1) Restart the app, 2) Check your internet connection, 3) Update to the latest version, 4) Restart your phone. If problems continue, contact our support team with details about the issue.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h5>Can I use Usalama Watch without internet?</h5>
+                        <i class="fa fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, through our USSD service or by using offline reporting in the mobile app (reports are sent when connection is restored). The safety map requires internet connection to show real-time data.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h5>How do I update my notification preferences?</h5>
+                        <i class="fa fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Log into your account, go to Settings > Notifications, and adjust your preferences for alert types, methods (SMS/email/push), frequency, and geographic areas you want to monitor.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h5>What should I do if I forget my password?</h5>
+                        <i class="fa fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Click "Forgot Password" on the login page and enter your email address. You'll receive instructions to reset your password. If you don't receive the email, check your spam folder or contact support.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h5>How can I provide feedback or suggest improvements?</h5>
+                        <i class="fa fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We welcome feedback! Use the feedback form in the app or website, email us at feedback@usalamawatch.co.ke, or participate in our community forums. Your suggestions help us improve the platform for everyone.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Technical FAQ Area -->
+
+<!-- Start Still Have Questions Area -->
+<section class="ussd-area section-gap">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8">
+                <div class="ussd-content">
+                    <h2>Still Have Questions?</h2>
+                    <p>Can't find the answer you're looking for? Please get in touch with our support team.</p>
+                    <div class="contact-options">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="contact-option">
+                                    <i class="fa fa-envelope"></i>
+                                    <h5>Email Support</h5>
+                                    <p>support@usalamawatch.co.ke</p>
+                                    <span>Response within 24 hours</span>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="contact-option">
+                                    <i class="fa fa-phone"></i>
+                                    <h5>Phone Support</h5>
+                                    <p>+254 700 123 456</p>
+                                    <span>Mon-Fri, 8AM-6PM</span>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="contact-option">
+                                    <i class="fa fa-comments"></i>
+                                    <h5>Live Chat</h5>
+                                    <p>Available on website</p>
+                                    <span>Real-time assistance</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="quick-help text-center">
+                    <h4>Quick Help</h4>
+                    <div class="help-links">
+                        <a href="how-it-works.html" class="help-link">
+                            <i class="fa fa-play-circle"></i>
+                            <span>How It Works Guide</span>
+                        </a>
+                        <a href="safety-tips.html" class="help-link">
+                            <i class="fa fa-lightbulb-o"></i>
+                            <span>Safety Tips</span>
+                        </a>
+                        <a href="emergency-services.html" class="help-link">
+                            <i class="fa fa-phone"></i>
+                            <span>Emergency Contacts</span>
+                        </a>
+                        <a href="report.html" class="help-link">
+                            <i class="fa fa-flag"></i>
+                            <span>Report an Incident</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Still Have Questions Area -->
+
+{% endblock %}
